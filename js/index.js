@@ -1,7 +1,6 @@
-function main() {
-          // hier komt je code
-}
-
-window.onload = function() {
-       main();
-};
+$(document).ready(function() {
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("menuDisplayed");
+    });
+});

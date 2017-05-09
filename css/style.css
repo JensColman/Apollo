@@ -1,21 +1,113 @@
-/* Aan te passen:
-- "Lessen" mooi zetten
-- het content-venster aanpassen (padding weg, breedte kleiner maken en zorgen dat de marge links en rechts altijd hetzelfde zijn) */
-
-
 /* Body en achtergrond */
 
 body {
-     background: lightgrey;
-     font-family: 'Roboto', sans-serif;
-     --eersteKleur: rgb(255, 255, 255);
-     --tweedeKleur: rgb(178, 178, 178);
-     --derdeKleur: rgb(31, 69, 86);
-     --vierdeKleur: rgb(21, 39, 58);
-     --vijfdeKleur: rgb(242, 158, 6);
-     font-weight: 300;
-     overflow: hidden;
-     color: var(--vierdeKleur);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: var(--vierdeKleur);
+    --eersteKleur: rgb(255, 255, 255);
+    --tweedeKleur: rgb(178, 178, 178);
+    --derdeKleur: rgb(31, 69, 86);
+    --vierdeKleur: rgb(21, 39, 58);
+    --vijfdeKleur: rgb(242, 158, 6);
+    position: relative;
+}
+
+
+/* Sidebar */
+
+#sidebar-wrapper {
+    z-index: 1;
+    position: fixed;
+    width: 0;
+    height: 100vh;
+    overflow-y: hidden;
+    background: var(--derdeKleur);
+    opacity: 0.9;
+}
+
+
+/* Main content */
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+
+/* Verander de breedte van de sidebar om het te laten zien */
+
+#wrapper.menuDisplayed #sidebar-wrapper {
+    width: 20vw;
+}
+
+#wrapper.menuDisplayed #page-content-wrapper {
+    padding-left: 20vw;
+}
+
+
+/* Sidebar styling */
+
+.sidebar-nav {
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    line-height: 40px;
+    text-align: center;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: var(--eersteKleur);
+}
+
+.sidebar-nav li a:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.logoNav {
+    width: 10vw;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.eigenFoto {
+    border-radius: 50%;
+    border: 0.5vw solid var(--tweedeKleur);
+    box-sizing: border-box;
+    width: 10vw;
+    height: 10vw;
+    margin-bottom: 10px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    background: url(../images/default-placeholder.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h3 {
+    font-size: 15pt;
+    font-weight: 900 !important;
+    text-align: center;
+    color: var(--eersteKleur) !important;
+    margin: 0px 1.5vw 0px 1.5vw;
+}
+
+h5 {
+    font-size: 12pt;
+    font-weight: 300 !important;
+    text-align: center;
+    color: var(--eersteKleur) !important;
+    margin: 0px 1.5vw 0px 1.5vw;
+    margin-bottom: 30px !important;
 }
 
 .achtergrond {
@@ -29,139 +121,53 @@ body {
      filter: blur(5px);
 }
 
+.knopFixed {
+     position: fixed;
+}
+
+
+.test {
+     height: 3000px;
+}
+
+/*.achtergrond {
+     background: url(../images/Dashboard1.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     width: 100vw;
+     height: 100vh;
+     position: fixed;
+     filter: blur(5px);
+}
+*/
+
+
 /* Tekst */
 
-h1{
-     color: var(--eersteKleur);
-     font-weight: 500;
-     width: 15vw;
-     position: relative;
-     left: 50%;
-     transform: translate(-50%);
-     margin-bottom: 50px;
-     text-align: center;
+
+/*h1 {
+    color: var(--eersteKleur);
+    font-weight: 500;
+    width: 15vw;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 h2 {
-     font-size: 21pt;
-     font-weight: 900;
-     margin-bottom: 20px;
+    font-size: 21pt;
+    font-weight: 900;
+    margin-bottom: 20px;
 }
 
 h3 {
-     font-size: 50pt;
-     font-weight: 900;
+    font-size: 50pt;
+    font-weight: 900;
 }
 
-/* Navigatie */
 
-nav {
-     margin-bottom: 50px;
-}
 
-li {
-     text-align: center;
-     padding: 10px 0px 10px 0px;
-     background: rgba(0, 0, 0, 0.2);
-}
-
-li:hover {
-     background: var(--vierdeKleur);
-}
-
-a {
-     color: var(--vierdeKleur);
-}
-
-a:hover {
-     color: var(--vijfdeKleur);
-}
-
-.navLink {
-     text-decoration: none;
-     color: var(--eersteKleur);
-     width: 10vw;
-     position: relative;
-}
-
-.navigatie {
-     background: var(--derdeKleur);
-     width: 20vw;
-     height: 100vh;
-     list-style: none;
-     position: fixed;
-     box-shadow: -2px 0px 30px 8px rgba(0,0,0,0.60);
-}
-
-.logo {
-     width: 10vw;
-     position: relative;
-     left: 50%;
-     transform: translate(-50%);
-     margin-top: 50px;
-     margin-bottom: 20px;
-}
-
-.eigenFoto {
-     border-radius: 50%;
-     border: 0.5vw solid var(--tweedeKleur);
-     box-sizing: border-box;
-     width: 10vw;
-     height: 10vw;
-     margin-bottom: 30px;
-     position: relative;
-     left: 50%;
-     transform: translate(-50%);
-     background: url(../images/default-placeholder.png);
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: center;
-}
-
-/* Content */
-
-.content {
-     width: 80vw;
-     height: 100vh;
-     position: absolute;
-     left: 20vw;
-     padding: 150px 0px 100px 5vw;
-     overflow-y: scroll;
-}
-
-.contentVlak {
-     width: 30vw;
-     height: 15vw;
-     background: var(--eersteKleur);
-     position: relative;
-     margin: 20px;
-     box-shadow: -2px 0px 30px 8px rgba(0,0,0,0.30);
-     display: block;
-     float: left;
-     padding: 30px 20px 20px 20px;
-}
-
-/* Login pagina */
-
-.login {
-     position: absolute;
-     left: 50%;
-     top: 50%;
-     transform: translate(-50%, -50%);
-     width: 500px;
-     height: 400px;
-     background: var(--tweedeKleur);
-     box-shadow: -2px 0px 30px 8px rgba(0,0,0,0.30);
-}
-
-.homelink {
-     color: black;
-     width: 200px;
-     height: 100px;
-     border: 3px solid black;
-     position: relative;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     text-align: center;
-}
+*/
