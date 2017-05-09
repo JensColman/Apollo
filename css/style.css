@@ -12,57 +12,123 @@ body {
     position: relative;
 }
 
+
 /* Sidebar */
+
 #sidebar-wrapper {
-     z-index: 1;
-     position: absolute;
-     width: 0;
-     height: 100vh;
-     overflow-y: hidden;
-     background: var(--derdeKleur);
-     opacity: 0.9;
+    z-index: 1;
+    position: fixed;
+    width: 0;
+    height: 100vh;
+    overflow-y: hidden;
+    background: var(--derdeKleur);
+    opacity: 0.9;
 }
+
 
 /* Main content */
+
 #page-content-wrapper {
-     width: 100%;
-     position: absolute;
-     padding: 15px;
+    width: 100%;
+    position: absolute;
+    padding: 15px;
 }
 
+
 /* Verander de breedte van de sidebar om het te laten zien */
+
 #wrapper.menuDisplayed #sidebar-wrapper {
-     width: 20vw;
+    width: 20vw;
 }
 
 #wrapper.menuDisplayed #page-content-wrapper {
-     padding-left: 20vw;
+    padding-left: 20vw;
 }
 
+
 /* Sidebar styling */
+
 .sidebar-nav {
-     padding: 0;
-     list-style: none;
+    padding: 0;
+    list-style: none;
 }
 
 .sidebar-nav li {
-     text-indent: 20px;
-     line-height: 40px;
+    line-height: 40px;
+    text-align: center;
 }
 
 .sidebar-nav li a {
-     display: block;
-     text-decoration: none;
-     color: black;
+    display: block;
+    text-decoration: none;
+    color: var(--eersteKleur);
 }
 
 .sidebar-nav li a:hover {
-     background: purple;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.logoNav {
+    width: 10vw;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.eigenFoto {
+    border-radius: 50%;
+    border: 0.5vw solid var(--tweedeKleur);
+    box-sizing: border-box;
+    width: 10vw;
+    height: 10vw;
+    margin-bottom: 10px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    background: url(../images/default-placeholder.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h3 {
+    font-size: 15pt;
+    font-weight: 900 !important;
+    text-align: center;
+    color: var(--eersteKleur) !important;
+    margin: 0px 1.5vw 0px 1.5vw;
+}
+
+h5 {
+    font-size: 12pt;
+    font-weight: 300 !important;
+    text-align: center;
+    color: var(--eersteKleur) !important;
+    margin: 0px 1.5vw 0px 1.5vw;
+    margin-bottom: 30px !important;
+}
+
+.achtergrond {
+     background: url(../images/Dashboard1.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     width: 100vw;
+     height: 100vh;
+     position: fixed;
+     filter: blur(5px);
+}
+
+.knopFixed {
+     position: fixed;
 }
 
 
-
-
+.test {
+     height: 3000px;
+}
 
 /*.achtergrond {
      background: url(../images/Dashboard1.jpg);
@@ -102,28 +168,6 @@ h3 {
     font-weight: 900;
 }
 
-.logo {
-    width: 10vw;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
-    margin-top: 50px;
-    margin-bottom: 20px;
-}
 
-.eigenFoto {
-    border-radius: 50%;
-    border: 0.5vw solid var(--tweedeKleur);
-    box-sizing: border-box;
-    width: 10vw;
-    height: 10vw;
-    margin-bottom: 30px;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
-    background: url(../images/default-placeholder.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
+
 */
