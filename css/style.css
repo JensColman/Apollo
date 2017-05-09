@@ -143,25 +143,49 @@ a:hover {
 
 /* Login pagina */
 
-.login {
-     position: absolute;
-     left: 50%;
-     top: 50%;
-     transform: translate(-50%, -50%);
-     width: 500px;
-     height: 400px;
-     background: var(--tweedeKleur);
-     box-shadow: -2px 0px 30px 8px rgba(0,0,0,0.30);
+body.page-login {
+    background-color: var(--vierdeKleur);
 }
 
-.homelink {
-     color: black;
-     width: 200px;
-     height: 100px;
-     border: 3px solid black;
-     position: relative;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     text-align: center;
+div.login-box {
+    width: 25%;
+    height: 350px;
+    background-color: rgb(249, 249, 249);
+    border-radius: 5px;
+    border: 1px solid rgb(231, 231, 231);
+    margin: 150px auto 0 auto;
+    padding: 20px;
+}
+
+div.form-group {
+    width: 85%;
+    margin: 0 auto;
+}
+
+img.login-profile {
+    width: 25%;
+    max-width: 30%;
+    border-radius: 150px;
+    box-shadow: 2px 2px 15px var(--vierdeKleur);
+    margin: 0 auto;
+    position: relative;
+    bottom: 65px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+input.login-input {
+    margin-bottom: 30px;
+}
+
+button.login-signin, button.login-signin:hover {
+    color: var(--eersteKleur);
+    font-size: 16px;
+    background-color: var(--vijfdeKleur);
+    border: none;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 10px 15px;
+    margin-bottom: 20px;
 }
