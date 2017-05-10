@@ -1,6 +1,18 @@
 /* Body en achtergrond */
 
 body {
+<<<<<<< HEAD
+     background: lightgrey;
+     font-family: 'Roboto', sans-serif;
+     --eersteKleur: rgb(255, 255, 255);
+     --tweedeKleur: rgb(178, 178, 178);
+       --derdeKleur: rgb(31, 69, 86);
+     --vierdeKleur: rgb(21, 39, 58);
+     --vijfdeKleur: rgb(242, 158, 6);
+     font-weight: 300;
+     overflow: hidden;
+     color: var(--vierdeKleur);
+=======
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: var(--vierdeKleur);
@@ -10,6 +22,7 @@ body {
     --vierdeKleur: rgb(21, 39, 58);
     --vijfdeKleur: rgb(242, 158, 6);
     position: relative;
+>>>>>>> refs/remotes/origin/master
 }
 
 
@@ -143,6 +156,108 @@ h5 {
 */
 
 
+<<<<<<< HEAD
+.content {
+     width: 80vw;
+     height: 100vh;
+     position: absolute;
+     left: 20vw;
+     padding: 150px 0px 100px 5vw;
+     overflow-y: scroll;
+}
+
+.contentVlak {
+     width: 30vw;
+     height: 15vw;
+     background: var(--eersteKleur);
+     position: relative;
+     margin: 20px;
+     box-shadow: -2px 0px 30px 8px rgba(0,0,0,0.30);
+     display: block;
+     float: left;
+     padding: 30px 20px 20px 20px;
+}
+
+/* Login pagina */
+
+body.page-login {
+    background-color: var(--vierdeKleur);
+}
+
+div.login-box {
+    width: 25%;
+    height: 350px;
+    background-color: rgb(249, 249, 249);
+    border-radius: 5px;
+    border: 1px solid rgb(231, 231, 231);
+    margin: 150px auto 0 auto;
+    padding: 20px;
+}
+
+div.form-group {
+    width: 85%;
+    margin: 0 auto;
+}
+
+img.login-profile {
+    width: 25%;
+    max-width: 30%;
+    border-radius: 150px;
+    box-shadow: 2px 2px 15px var(--vierdeKleur);
+    margin: 0 auto;
+    position: relative;
+    bottom: 65px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+input.login-input {
+    margin-bottom: 30px;
+}
+
+button.login-signin, button.login-signin:hover {
+    color: var(--eersteKleur);
+    font-size: 16px;
+    background-color: var(--vijfdeKleur);
+    border: none;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+
+/*Media queries*/
+
+@media (max-width: 1100px) {
+    div.login-box {
+        width: 34%;
+    }
+}
+
+@media (max-width: 885px) {
+    div.login-box {
+        width: 40%;
+    }
+}
+
+@media (max-width: 850px) {
+    div.login-box {
+        width: 50%;
+    }
+}
+
+/*@media (max-width: 765px) {
+    div.login-box {
+        width: 75%;
+    }
+}*/
+
+@media (max-width: 555px) {
+    div.login-box {
+        width: 90%;
+    }
+=======
 /* Tekst */
 
 
@@ -166,6 +281,7 @@ h2 {
 h3 {
     font-size: 50pt;
     font-weight: 900;
+>>>>>>> refs/remotes/origin/master
 }
 
 
