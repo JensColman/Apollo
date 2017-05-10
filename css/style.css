@@ -1,28 +1,17 @@
 /* Body en achtergrond */
 
 body {
-<<<<<<< HEAD
-     background: lightgrey;
-     font-family: 'Roboto', sans-serif;
-     --eersteKleur: rgb(255, 255, 255);
-     --tweedeKleur: rgb(178, 178, 178);
-       --derdeKleur: rgb(31, 69, 86);
-     --vierdeKleur: rgb(21, 39, 58);
-     --vijfdeKleur: rgb(242, 158, 6);
-     font-weight: 300;
-     overflow: hidden;
-     color: var(--vierdeKleur);
-=======
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: var(--vierdeKleur);
+    background: lightgrey;
     --eersteKleur: rgb(255, 255, 255);
     --tweedeKleur: rgb(178, 178, 178);
     --derdeKleur: rgb(31, 69, 86);
     --vierdeKleur: rgb(21, 39, 58);
     --vijfdeKleur: rgb(242, 158, 6);
     position: relative;
->>>>>>> refs/remotes/origin/master
+    /*overflow: hidden;*/
 }
 
 
@@ -35,7 +24,6 @@ body {
     height: 100vh;
     overflow-y: hidden;
     background: var(--derdeKleur);
-    opacity: 0.9;
 }
 
 
@@ -134,9 +122,49 @@ h5 {
      filter: blur(5px);
 }
 
+
+/*  Hamburger menu */
 .knopFixed {
      position: fixed;
 }
+
+#wrapper.menuDisplayed .knopFixed {
+    left: 30px;
+    z-index: 500;
+}
+
+.hamburger {
+
+}
+
+#rect1 {
+     background: var(--eersteKleur);
+     width: 35px;
+     height: 5px;
+     margin-bottom: 7px;
+}
+
+#rect2 {
+     background: var(--eersteKleur);
+     width: 35px;
+     height: 5px;
+     margin-bottom: 7px;
+}
+
+#rect3 {
+     background: var(--eersteKleur);
+     width: 35px;
+     height: 5px;
+}
+
+
+
+
+
+
+
+
+
 
 
 .test {
