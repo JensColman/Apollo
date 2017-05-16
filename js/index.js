@@ -5,3 +5,7 @@ $(document).ready(function() {
         $("#wrapper").toggleClass("menuDisplayed");
     });
 });
+
+/*// Om .les dezelfde hoogte als breedte te geven
+var cw = $('.les').width();
+$('.les').css({'height':cw+'px'});*/
