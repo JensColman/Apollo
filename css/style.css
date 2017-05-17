@@ -153,11 +153,28 @@
     }
     /* Algemene styling */
 
-    h1 {
+    h1.hoofdtitel {
         color: var(--eersteKleur) !important;
         font-weight: 500 !important;
         font-size: 40pt !important;
         width: 15vw;
+        position: relative;
+        margin-bottom: 4vw !important;
+        text-align: left;
+    }
+    h1.hoofdtitel-2 {
+        color: var(--vijfdeKleur) !important;
+        font-weight: 500 !important;
+        font-size: 40pt !important;
+        width: 30vw;
+        position: relative;
+        text-align: left;
+    }
+
+    h2.ondertitel {
+        color: var(--eersteKleur) !important;
+        font-weight: 500 !important;
+        font-size: 40pt !important;
         position: relative;
         margin-bottom: 4vw !important;
         text-align: left;
@@ -244,10 +261,27 @@
     }
 
     .vraag {
-         background: rgba(255, 255, 255, 0.8);
+         background: rgba(255, 255, 255, 1);
          width: 100%;
          padding: 4vw;
          margin-bottom: 20px;
+    }
+
+    .vraag-detail {
+         background: rgba(255, 255, 255, 1);
+         width: 100%;
+         padding: 4vw;
+         margin-bottom: 0px;
+    }
+
+    .antwoorden {
+        background: rgba(255, 255, 255, 0.8);
+    }
+
+    .antwoord {
+
+        width: 100%;
+        padding: 4vw;
     }
 
     .streep {
@@ -257,9 +291,13 @@
          opacity: 0.3;
     }
 
-    .markering {
-         color: var(--vijfdeKleur);
-    }
+    .streep-2 {
+        width: 90%;
+        height: 1px;
+        background: var(--vierdeKleur);
+        opacity: 0.2;
+        margin: 0 auto;
+     }
 
     <<<<<<< HEAD .content {
         width: 80vw;
