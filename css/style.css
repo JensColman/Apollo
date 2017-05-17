@@ -222,17 +222,17 @@
   .lessen {}
 
   .les {
-      height: 15vw;
-      width: 15vw;
+      height: 11vw;
+      width: 11vw;
       background: rgba(255, 255, 255, 0.5);
       display: block;
       float: left;
       margin-right: 4vw;
       margin-bottom: 4vw;
       text-align: center;
-      font-size: 5vw !important;
+      font-size: 3vw !important;
       font-weight: 500;
-      padding-top: 4vw;
+      padding-top: 6.9vw;
   }
 
   .les:hover .insideLes {
@@ -253,11 +253,11 @@
       position: relative;
       display: none;
       float: left;
-      width: 15vw;
-      height: 5vw;
+      width: 11vw;
+      height: 3.67vw;
       top: -11.1vw;
       text-decoration: none !important;
-      line-height: 2;
+      line-height: 2.5;
       color: var(--tweedeKleur);
   }
 
