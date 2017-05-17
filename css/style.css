@@ -96,6 +96,20 @@
         background-size: cover;
         background-position: center;
     }
+
+    .gebruikersFoto {
+        border-radius: 50%;
+        border: 0.3vw solid var(--tweedeKleur);
+        box-sizing: border-box;
+        width: 5vw;
+        height: 5vw;
+        margin-bottom: 10px;
+        position: relative;
+        background: url(../images/default-placeholder.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
     /*  Hamburger menu */
 
     .knopFixed {
@@ -141,7 +155,7 @@
 
     h1 {
         color: var(--eersteKleur) !important;
-        font-weight: 500;
+        font-weight: 500 !important;
         font-size: 40pt !important;
         width: 15vw;
         position: relative;
@@ -173,6 +187,10 @@
 
     h6 {
          font-size: 21pt !important;
+    }
+
+    .naamVraag {
+         font-size: 12pt !important;
     }
 
     /* Main content */
@@ -226,7 +244,7 @@
     }
 
     .vraag {
-         background: rgba(255, 255, 255, 0.5);
+         background: rgba(255, 255, 255, 0.8);
          width: 100%;
          padding: 4vw;
          margin-bottom: 20px;
