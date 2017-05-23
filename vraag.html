@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,500,900" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://cdn.quilljs.com/1.2.4/quill.snow.css" rel="stylesheet">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
@@ -72,8 +73,14 @@
 							</div><!--einde div .content-vraag-stelling-->
 						</div><!--einde div .content-vraag-sectie-->
 
-							<div class="content-vraag-sectie antwoorden">
-								<h3  class="dashboard-antwoorden">Antwoorden</h3>
+						<div class="content-tools">
+							<button class="button-tool">Reacties</button>
+							<button class="button-tool">Beantwoord</button>
+						</div>
+						<div id="toolbar"></div>
+						<div id="editor"></div>
+						<div class="content-vraag-sectie antwoorden">
+								<h3  class="dashboard-antwoorden">Reacties</h3>
 								<div class="previous-next">
 										<a href="#"><<</a>
 										<a href="#" class="previous-next-active">1</a>
@@ -142,8 +149,10 @@
 			</div><!--einde div #wrapper-->
 
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+		<script src="https://cdn.quilljs.com/1.2.4/quill.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>

@@ -295,7 +295,7 @@
     }
 
     .antwoorden {
-        background: rgba(255, 255, 255, 0.85);
+        background: rgba(255, 255, 255, 0.9);
     }
 
     .antwoord {
@@ -327,9 +327,42 @@
         margin-top: 25px;
     }
 
-    a.previous-next-active {
-        color: var(--vierdeKleur);
+    div.content-tools {
+        width: 30%;
+        padding: 10px;
+        margin: 0 auto 50px auto;
+
     }
+
+    button.button-tool {
+        font-weight: 700 !important;
+        text-align: center;
+        color: var(--vierdeKleur)
+        background-color: var(--eersteKleur);
+        border: 0;
+        border-radius: 5px;
+        padding: 8px 15px;
+        margin-right: 15px;
+    }
+
+    button.button-tool:hover {
+        color: var(--eersteKleur);
+        background-color: var(--vijfdeKleur);
+    }
+
+    #editor {
+        width: 70%;
+        height: 150px;
+        background-color: var(--eersteKleur);
+        box-shadow: 5px 5px 20px var(--vierdeKleur);
+        margin: 0 auto;
+    }
+
+    .ql-toolbar .ql-snow {
+        background-color: var(--eersteKleur) !important;
+        border: 1px solid red;
+    }
+
 
     /*Grafische elementen*/
 
@@ -360,6 +393,10 @@
     a.leesMeer {
         margin-top: 20px;
         text-decoration: underline;
+    }
+
+    a.previous-next-active {
+        color: var(--vierdeKleur);
     }
 
     /* Login-pagina */
