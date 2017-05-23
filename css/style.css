@@ -215,6 +215,14 @@
         margin: 0px 1.5vw 0px 1.5vw;
     }
 
+    h3.dashboard-antwoorden {
+        font-size: 16pt;
+        text-align: left;
+        color: var(--vierdeKleur) !important;
+        font-weight: normal !important;
+
+    }
+
     h4 {
         font-size: 5vw !important;
         position: relative;
@@ -286,24 +294,14 @@
          margin: 0 auto 30px auto;
     }
 
-    .vraag-detail {
-         background: rgba(255, 255, 255, 1);
-         width: 100%;
-         padding: 4vw;
-         margin-bottom: 0px;
-    }
-
     .antwoorden {
-        background: rgba(255, 255, 255, 0.8);
+        background: rgba(255, 255, 255, 0.85);
     }
 
     .antwoord {
-
         width: 100%;
         padding: 4vw;
     }
-
-
 
     <<<<<<< HEAD .content {
         width: 80vw;
@@ -323,6 +321,16 @@
         margin-top: 25px;
     }
 
+    div.previous-next {
+        font-size: 13pt;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    a.previous-next-active {
+        color: var(--vierdeKleur);
+    }
+
     /*Grafische elementen*/
 
     .streep {
@@ -335,10 +343,10 @@
 
     .streep-2 {
         width: 90%;
-        height: 1px;
+        height: 1.5px;
         background: var(--vierdeKleur);
         opacity: 0.2;
-        margin: 0 auto;
+        margin: 60px auto 0 auto;
      }
 
     /*Paragrafen en links*/
