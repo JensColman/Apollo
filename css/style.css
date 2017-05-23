@@ -134,15 +134,6 @@
         background-size: cover;
     }
 
-    div.content-vraag-info {
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    div.content-rating {
-        margin-top: 25px;
-    }
-
     /*  Hamburger menu */
 
     .knopFixed {
@@ -197,19 +188,19 @@
         margin-bottom: 4vw !important;
         text-align: left;
     }
-    h1.hoofdtitel-2 {
+    h1.dashboard-hoofdtitel {
         color: var(--vijfdeKleur) !important;
         font-weight: 500 !important;
-        font-size: 40pt !important;
+        font-size: 35pt !important;
         width: 30vw;
         position: relative;
         text-align: left;
     }
 
-    h2.ondertitel {
+    h2.dashboard-subtitel {
         color: var(--eersteKleur) !important;
         font-weight: 500 !important;
-        font-size: 40pt !important;
+        font-size: 30pt !important;
         position: relative;
         margin-bottom: 4vw !important;
         text-align: left;
@@ -239,7 +230,6 @@
     }
 
     /* Main content */
-
 
     #page-content-wrapper {
         width: 100%;
@@ -324,6 +314,14 @@
         overflow-y: scroll;
     }
 
+    div.content-vraag-info {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    div.content-rating {
+        margin-top: 25px;
+    }
 
     /*Grafische elementen*/
 
@@ -470,6 +468,16 @@
     }
 
     @media (max-width: 885px) {
+        h1.dashboard-hoofdtitel{
+            font-size: 30pt !important;
+        }
+        h2.dashboard-subtitel {
+            font-size: 25pt !important;
+        }
+        div.content-vraag-sectie {
+            /*Kaders in vragenlijst.html*/
+            width: 95%;
+        }
         div.login-box {
             width: 40%;
         }
@@ -497,14 +505,19 @@
             width: 50%;
         }
     }
-    /*@media (max-width: 765px) {
-div.login-box {
-width: 75%;
-}
-}*/
 
     @media (max-width: 555px) {
+        h1.dashboard-hoofdtitel{
+            font-size: 25pt !important;
+        }
+        h2.dashboard-subtitel {
+            font-size: 20pt !important;
+        }
         div.login-box {
             width: 90%;
+        }
+        div.content-vraag-sectie {
+            /*Kaders in vragenlijst.html*/
+            width: 100%;
         }
      }
