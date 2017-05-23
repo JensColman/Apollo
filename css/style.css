@@ -1,3 +1,466 @@
+<<<<<<< HEAD
+        /* Body en achtergrond */
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        color: var(--vierdeKleur);
+        background: lightgrey;
+        --eersteKleur: rgb(255, 255, 255);
+        --tweedeKleur: rgb(178, 178, 178);
+        --derdeKleur: rgb(31, 69, 86);
+        --vierdeKleur: rgb(21, 39, 58);
+        --vijfdeKleur: rgb(242, 158, 6);
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .achtergrond {
+        background: url(../images/Dashboard1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        /*filter: blur(5px);*/
+    }
+
+    .achtergrondOverlay {
+        background: rgba(0, 0, 0, 0.5);
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+    }
+    /* Sidebar */
+
+    #sidebar-wrapper {
+        z-index: 1;
+        position: fixed;
+        width: 0;
+        height: 100vh;
+        overflow-y: hidden;
+        background: var(--derdeKleur);
+    }
+    /* Verander de breedte van de sidebar om het te laten zien */
+
+    #wrapper.menuDisplayed #sidebar-wrapper {
+        width: 20vw;
+    }
+
+    #wrapper.menuDisplayed #page-content-wrapper {
+        padding-left: 25vw;
+    }
+    /* Sidebar styling */
+
+    .sidebar-nav {
+        padding: 0;
+        list-style: none;
+    }
+
+    .sidebar-nav li {
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .sidebar-nav li a {
+        display: block;
+        text-decoration: none;
+        color: var(--eersteKleur);
+    }
+
+    .sidebar-nav li a:hover {
+        background: rgba(0, 0, 0, 0.2);
+    }
+
+    .logoNav {
+        width: 10vw;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .eigenFoto {
+        border-radius: 50%;
+        border: 0.5vw solid var(--tweedeKleur);
+        box-sizing: border-box;
+        width: 10vw;
+        height: 10vw;
+        margin-bottom: 10px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        background: url(../images/default-placeholder.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .gebruikersFoto {
+        border-radius: 50%;
+        border: 0.3vw solid var(--tweedeKleur);
+        box-sizing: border-box;
+        width: 5vw;
+        height: 5vw;
+        margin-bottom: 10px;
+        position: relative;
+        background: url(../images/default-placeholder.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    /*  Hamburger menu */
+
+    .knopFixed {
+        position: fixed;
+        top: 30px;
+    }
+
+    #wrapper.menuDisplayed .knopFixed {
+        left: 30px;
+        z-index: 500;
+        opacity: 0.2;
+    }
+
+    .hamburger {
+        position: fixed;
+        left: 30px;
+        min-width: 2vw;
+        max-width: 5vw;
+    }
+
+    #rect1 {
+        background: var(--eersteKleur);
+        min-width: 2vw;
+        max-width: 5vw;
+        height: 5px;
+        margin-bottom: 7px;
+    }
+
+    #rect2 {
+        background: var(--eersteKleur);
+        min-width: 2vw;
+        max-width: 5vw;
+        height: 5px;
+        margin-bottom: 7px;
+    }
+
+    #rect3 {
+        background: var(--eersteKleur);
+        width: 35px;
+        height: 5px;
+    }
+    /* Algemene styling */
+
+    h1.hoofdtitel {
+        color: var(--eersteKleur) !important;
+        font-weight: 500 !important;
+        font-size: 40pt !important;
+        width: 15vw;
+        position: relative;
+        margin-bottom: 4vw !important;
+        text-align: left;
+    }
+    h1.hoofdtitel-2 {
+        color: var(--vijfdeKleur) !important;
+        font-weight: 500 !important;
+        font-size: 40pt !important;
+        width: 30vw;
+        position: relative;
+        text-align: left;
+    }
+
+    h2.ondertitel {
+        color: var(--eersteKleur) !important;
+        font-weight: 500 !important;
+        font-size: 40pt !important;
+        position: relative;
+        margin-bottom: 4vw !important;
+        text-align: left;
+    }
+
+    h3 {
+        font-size: 15pt;
+        font-weight: 900 !important;
+        text-align: center;
+        color: var(--eersteKleur) !important;
+        margin: 0px 1.5vw 0px 1.5vw;
+    }
+
+    h4 {
+        font-size: 5vw !important;
+        position: relative;
+    }
+
+    h5 {
+        font-size: 12pt;
+        font-weight: 300 !important;
+        text-align: center;
+        color: var(--eersteKleur) !important;
+        margin: 0px 1.5vw 0px 1.5vw;
+        margin-bottom: 30px !important;
+    }
+
+    h6 {
+         font-size: 21pt !important;
+    }
+
+    .naamVraag {
+         font-size: 12pt !important;
+    }
+
+    /* Main content */
+
+    #page-content-wrapper {
+        width: 100%;
+        position: absolute;
+        padding: 100px 10vw 50px 10vw;
+    }
+
+    .lessen {}
+
+    .les {
+        height: 15vw;
+        width: 15vw;
+        background: rgba(255, 255, 255, 0.5);
+        display: block;
+        float: left;
+        margin-right: 4vw;
+        margin-bottom: 4vw;
+        text-align: center;
+        font-size: 5vw !important;
+        font-weight: 500;
+        padding-top: 4vw;
+    }
+
+    .les:hover .insideLes {
+        display: block;
+    }
+
+    .les:hover {
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .insideLes:hover {
+        background: rgba(255, 255, 255, 0.5);
+        color: var(--eersteKleur);
+    }
+
+    .insideLes {
+        font-size: 50%;
+        position: relative;
+        display: none;
+        float: left;
+        width: 15vw;
+        height: 5vw;
+        top: -11.1vw;
+        text-decoration: none !important;
+        line-height: 2;
+        color: var(--tweedeKleur);
+    }
+
+    .vraag {
+         background: rgba(255, 255, 255, 1);
+         width: 100%;
+         padding: 4vw;
+         margin-bottom: 20px;
+    }
+
+    .vraag-detail {
+         background: rgba(255, 255, 255, 1);
+         width: 100%;
+         padding: 4vw;
+         margin-bottom: 0px;
+    }
+
+    .antwoorden {
+        background: rgba(255, 255, 255, 0.8);
+    }
+
+    .antwoord {
+
+        width: 100%;
+        padding: 4vw;
+    }
+
+    .streep {
+         width: 100%;
+         border-bottom: 2px solid var(--vierdeKleur);
+         margin-bottom: 10px;
+         opacity: 0.3;
+    }
+
+    .streep-2 {
+        width: 90%;
+        height: 1px;
+        background: var(--vierdeKleur);
+        opacity: 0.2;
+        margin: 0 auto;
+     }
+
+    <<<<<<< HEAD .content {
+        width: 80vw;
+        height: 100vh;
+        position: absolute;
+        left: 20vw;
+        padding: 150px 0px 100px 5vw;
+        overflow-y: scroll;
+    }
+    /* Login pagina */
+
+    body.page-login {
+        background-color: var(--vierdeKleur);
+    }
+
+    div.login-box {
+        width: 25%;
+        height: 350px;
+        background-color: rgb(249, 249, 249);
+        border-radius: 5px;
+        border: 1px solid rgb(231, 231, 231);
+        margin: 150px auto 0 auto;
+        padding: 20px;
+    }
+
+    div.form-group {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    img.login-profile {
+        width: 25%;
+        max-width: 30%;
+        border-radius: 150px;
+        box-shadow: 2px 2px 15px var(--vierdeKleur);
+        margin: 0 auto;
+        position: relative;
+        bottom: 65px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    input.login-input {
+        margin-bottom: 30px;
+    }
+
+    button.login-signin, button.login-signin:hover {
+        color: var(--eersteKleur);
+        font-size: 16px;
+        background-color: var(--vijfdeKleur);
+        border: none;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        padding: 10px 15px;
+        margin-bottom: 20px;
+    }
+    /*Media queries*/
+
+    @media (min-width: 1100px) {
+        #rect1 {
+            background: var(--eersteKleur);
+            width: 2vw;
+            height: 5px;
+            margin-bottom: 7px;
+        }
+        #rect2 {
+            background: var(--eersteKleur);
+            width: 2vw;
+            height: 5px;
+            margin-bottom: 7px;
+        }
+        #rect3 {
+            background: var(--eersteKleur);
+            width: 2vw;
+            height: 5px;
+        }
+    }
+
+    @media (max-width: 1400px) {
+        #rect1 {
+            background: var(--eersteKleur);
+            width: 3vw;
+            height: 5px;
+            margin-bottom: 7px;
+        }
+        #rect2 {
+            background: var(--eersteKleur);
+            width: 3vw;
+            height: 5px;
+            margin-bottom: 7px;
+        }
+        #rect3 {
+            background: var(--eersteKleur);
+            width: 3vw;
+            height: 5px;
+        }
+    }
+
+    @media (max-width: 1100px) {
+        div.login-box {
+            width: 34%;
+        }
+        #rect1 {
+            background: var(--eersteKleur);
+            width: 4vw;
+            height: 5px;
+            margin-bottom: 7px;
+        }
+        #rect2 {
+            background: var(--eersteKleur);
+            width: 4vw;
+            height: 5px;
+            margin-bottom: 7px;
+        }
+        #rect3 {
+            background: var(--eersteKleur);
+            width: 4vw;
+            height: 5px;
+        }
+    }
+
+    @media (max-width: 885px) {
+        div.login-box {
+            width: 40%;
+        }
+        #rect1 {
+            background: var(--eersteKleur);
+            width: 5vw;
+            height: 5px;
+            margin-bottom: 7px;
+        }
+        #rect2 {
+            background: var(--eersteKleur);
+            width: 5vw;
+            height: 5px;
+            margin-bottom: 7px;
+        }
+        #rect3 {
+            background: var(--eersteKleur);
+            width: 5vw;
+            height: 5px;
+        }
+    }
+
+    @media (max-width: 850px) {
+        div.login-box {
+            width: 50%;
+        }
+    }
+    /*@media (max-width: 765px) {
+div.login-box {
+width: 75%;
+}
+}*/
+
+    @media (max-width: 555px) {
+        div.login-box {
+            width: 90%;
+        }
+        =======
+=======
       /* Body en achtergrond */
 
   body {
@@ -433,3 +896,4 @@
       div.login-box {
           width: 90%;
       }
+>>>>>>> refs/remotes/origin/master
