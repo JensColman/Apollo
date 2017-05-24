@@ -83,7 +83,7 @@
 
     .eigenFoto {
         border-radius: 50%;
-        border: 0.5vw solid var(--tweedeKleur);
+        border: 0.3vw solid var(--tweedeKleur);
         box-sizing: border-box;
         width: 10vw;
         height: 10vw;
@@ -91,10 +91,9 @@
         position: relative;
         left: 50%;
         transform: translate(-50%);
-        background: url(../images/default-placeholder.png);
+        background: url(../images/apollo_personen_5.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
     }
 
 
@@ -130,6 +129,20 @@
     .vs2 .content-vraag-gebruikersFoto {
         /*Gebruikersfoto voor Gebruiker 2 in vragenlijst.html*/
         background: url(../images/apollo_personen_1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .vs3 .content-vraag-gebruikersFoto {
+        /*Gebruikersfoto voor Gebruiker 2 in vragenlijst.html*/
+        background: url(../images/apollo_personen_3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .vs4 .content-vraag-gebruikersFoto {
+        /*Gebruikersfoto voor Gebruiker 2 in vragenlijst.html*/
+        background: url(../images/apollo_personen_4.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -212,6 +225,10 @@
         text-align: center;
         color: var(--eersteKleur) !important;
         margin: 0px 1.5vw 0px 1.5vw;
+    }
+
+    h3.sidebar-naam {
+        font-weight: 600 !important;
     }
 
     h3.dashboard-antwoorden {
