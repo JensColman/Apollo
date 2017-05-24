@@ -366,18 +366,27 @@
         background-color: var(--vijfdeKleur);
     }
 
-    #toolbar {
-        background-color: var(--eersteKleur);
+    div.tool-wrapper {
+
+    }
+
+    .ql-toolbar.ql-snow {
+        width: 70%;
+        background: white !important;
+        margin: 0 auto;
     }
 
     #editor {
         width: 70%;
         height: 150px;
         background-color: var(--eersteKleur);
-        box-shadow: 5px 5px 20px var(--vierdeKleur);
+        box-shadow: 1px 1px 5px var(--vierdeKleur);
         margin: 0 auto;
     }
 
+    .onzichtbaar {
+        display: none;
+    }
 
     /*Grafische elementen*/
 

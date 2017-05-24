@@ -72,13 +72,16 @@
 						</div><!--einde div .content-vraag-sectie-->
 
 						<div class="content-tools">
-							<button class="button-tool">Reacties</button>
-							<button class="button-tool">Beantwoord</button>
+							<button id="vraag-reactie" class="button-tool">Reacties</button>
+							<button id="vraag-beantwoord" class="button-tool">Beantwoord</button>
 						</div>
-						<!--<div class="toolbar-wrapper"><div id="toolbar"></div></div>
-						<div id="editor"></div>-->
 
-						<div class="content-vraag-sectie antwoorden">
+						<div id="sectie-beantwoorden" class="tool-wrapper onzichtbaar">
+							<div id="toolbar"></div>
+							<div id="editor"></div>
+						</div>
+
+						<div id="sectie-antwoorden" class="content-vraag-sectie antwoorden">
 								<h3  class="dashboard-antwoorden">Reacties</h3>
 								<div class="previous-next">
 										<a href="#"><<</a>
@@ -100,7 +103,9 @@
 					        <p class="content-vraag-tekst">Probeer eens te runnen op poort 9000 ofzo (veranderen in index.js) had die fout ook vorige keer en dat werkte.</p>
 									<div class="content-rating">
 											<a class="rating"href="#"><img src="./images/apollo_icon_1.png" width="25">+15</a>
+											<a href="#" class="">Reageer</a>
 									</div>
+
 									<div class="streep-2"></div>
 								</div><!--einde div .antwoord-->
 								<div class="antwoord">
