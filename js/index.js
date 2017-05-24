@@ -2,7 +2,7 @@ function main() {
   $(document).ready(function() {
       $("#menu-toggle").click(function(e) {
           e.preventDefault();
-          $(this).toggleClass("hamburger");
+          //$(this).toggleClass("hamburger");
           $("#wrapper").toggleClass("menuDisplayed");
       });
   });
@@ -11,6 +11,7 @@ function main() {
   var cw = $('.les').width();
   $('.les').css({'height':cw+'px'});*/
 
+<<<<<<< HEAD
   var editor = document.getElementById("editor");
       editor.onclick = function() {
           console.log("you clicked me");
@@ -27,6 +28,10 @@ function main() {
                   [{ list: 'ordered' }, { list: 'bullet' }]
               ]
           }
+=======
+
+}
+>>>>>>> refs/remotes/origin/master
 
     });
     quill.setText('Schrijf een antwoord...');
@@ -36,4 +41,4 @@ function main() {
 
 window.onload = function() {
   main();
-}
+};
