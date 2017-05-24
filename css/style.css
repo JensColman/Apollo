@@ -350,17 +350,16 @@
         background-color: var(--vijfdeKleur);
     }
 
+    #toolbar {
+        background-color: var(--eersteKleur);
+    }
+
     #editor {
         width: 70%;
         height: 150px;
         background-color: var(--eersteKleur);
         box-shadow: 5px 5px 20px var(--vierdeKleur);
         margin: 0 auto;
-    }
-
-    .ql-toolbar .ql-snow {
-        background-color: var(--eersteKleur) !important;
-        border: 1px solid red;
     }
 
 
