@@ -2,7 +2,7 @@ function main() {
   $(document).ready(function() {
       $("#menu-toggle").click(function(e) {
           e.preventDefault();
-          $(this).toggleClass("hamburger");
+          //$(this).toggleClass("hamburger");
           $("#wrapper").toggleClass("menuDisplayed");
       });
   });
@@ -11,7 +11,7 @@ function main() {
   var cw = $('.les').width();
   $('.les').css({'height':cw+'px'});*/
 
-  
+
 }
 
 
