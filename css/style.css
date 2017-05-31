@@ -177,6 +177,20 @@
         background-size: cover;
     }
 
+    .vs5 .content-vraag-gebruikersFoto {
+        /*Gebruikersfoto voor Gebruiker 2 in vragenlijst.html*/
+        background: url(../images/apollo_personen_5.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .vs6 .content-vraag-gebruikersFoto {
+        /*Gebruikersfoto voor Gebruiker 2 in vragenlijst.html*/
+        background: url(../images/apollo_personen_6.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     /*  Hamburger menu */
 
     .knopFixed {
@@ -396,7 +410,7 @@
     }
 
     div.tool-wrapper {
-
+        margin-bottom: 50px;
     }
 
     .ql-toolbar.ql-snow {
@@ -503,6 +517,12 @@
         transform: translate(-50%);
         padding: 10px 15px;
         margin-bottom: 20px;
+    }
+
+    input.submit-button {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
     }
     /*Media queries*/
 

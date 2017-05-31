@@ -46,7 +46,7 @@
 				<div class="row">
 					<div class=" ad col-lg-12">
 						<h1 class="dashboard-hoofdtitel">CMT4</h1>
-						<h2 class="dashboard-subtitel">Onderwerp: Windows Node.js terminal</h2>
+						<h2 class="dashboard-subtitel">Onderwerp: "Please try running this command again as Root/Administrator" error</h2>
 					</div>
 				</div>
 				<div class="row">
@@ -62,9 +62,9 @@
 
 							<div class="content-vraag-stelling">
 								<div class="streep"></div>
-								<p class="content-vraag-tekst">Iemand die mij kan helpen? Ik heb vorige week mijn gitbash afgesloten toen ik klaar was met opdracht 2. Als ik vandaag aan mijn opdracht 3 wil werken, krijg ik een foutmelding als ik 'node index.js' of 'nodemon index.js' intyp?</p>
-								<p class="content-vraag-tekst"> Ook blijft in mijn browser op localhost:3000 nog steeds opdracht 2 getoond worden, zelfs als ik gitbash afsluit... Iemand die raad weet?</p>
-
+									<p class="content-vraag-tekst">Iemand die mij kan helpen? Ik wil voor Opdracht 2 dus express.js installeren en het werkt niet.</p>
+									<p class="content-vraag-tekst">Specifiek typ ik dit in mijn terminal: "npm install express --save"</p>
+									<p class="content-vraag-tekst">Ik krijg dan de melding: "npm ERR! Please try running this command again as root/Administrator"</p>
 								<div class="content-rating">
 										<a class="rating"href="#"><img src="./images/apollo_icon_1.png" width="25">+20</a>
 								</div>
@@ -78,6 +78,7 @@
 						<div id="sectie-beantwoorden" class="tool-wrapper onzichtbaar">
 							<div id="toolbar"></div>
 							<div id="editor"></div>
+							<input type="submit" class="submit-button">
 						</div>
 
 						<div id="sectie-antwoorden" class="content-vraag-sectie antwoorden">
@@ -99,7 +100,7 @@
 											<h6 class="content-vraag-datum">16/05/2017 14:30</h6>
 										</div>
 									</div><!--einde div .content-vraag-info-->
-					        <p class="content-vraag-tekst">Probeer eens te runnen op poort 9000 ofzo (veranderen in index.js) had die fout ook vorige keer en dat werkte.</p>
+					        <p class="content-vraag-tekst">In de terminal ben je niet de administrator, dus je kan een aantal commands niet uitvoeren. Als je gewoon "sudo" ervoor schrijft, dan moet alles normaal werken.</p>
 									<div class="content-rating">
 											<a class="rating"href="#"><img src="./images/apollo_icon_1.png" width="25">+15</a>
 											<a href="#" class="">Reageer</a>
@@ -115,8 +116,7 @@
 											<h6 class="content-vraag-datum">16/05/2017 14:30</h6>
 										</div>
 									</div><!--einde div .content-vraag-info-->
-					        <p class="content-vraag-tekst">Er staat "EADDRINUSE :::3000", dus dat betekent dat er iets reeds actief is op :3000. </p>
- <p class="content-vraag-tekst">Opdracht 2 is nog steeds aant runnen. Ik weet niet of da da gaat, maar kan je terug naar de folder van die opdracht gaan en die index.js afsluiten? :S
+					        <p class="content-vraag-tekst">Je kan misschien terug opnieuw beginnen met dat mapje van node_modules. Wie weet is het een bug van npm of Node?.</p>
 </p>
 									<div class="content-rating">
 											<a class="rating"href="#"><img src="./images/apollo_icon_1.png" width="25">+1</a>
@@ -124,14 +124,15 @@
 									<div class="streep-2"></div>
 								</div><!--einde div .antwoord-->
 								<div class="antwoord">
-									<div class="content-vraag-info vs1">
+									<div class="content-vraag-info vs5">
 										<div class="content-vraag-gebruikersFoto gebruikersFoto"></div>
 										<div class="content-vraag-gebruikersInfo">
-											<h6 class="content-vraag-naam"><a class="content-vraag-gebruiker"href="">Dieter Vandenbroeck</a></h6>
+											<h6 class="content-vraag-naam"><a class="content-vraag-gebruiker"href="">Niels De Smet</a></h6>
 											<h6 class="content-vraag-datum">16/05/2017 15:00</h6>
 										</div>
 									</div><!--einde div .content-vraag-info-->
-					        <p class="content-vraag-tekst"><a href="#">@Nigel</a> Op 9000 lukt hij idd wel, maar skype is niet het probleem. Die opdracht 2 blijft gewoon doorlopen op 3000.</p>
+					        <p class="content-vraag-tekst"><a href="#">@Nigel</a> Je kan ook de user veranderen</p>
+									<p class="content-vraag-tekst">sudo chown -R $USER /usr/local</p>
 									<div class="content-rating">
 											<a class="rating"href="#"><img src="./images/apollo_icon_1.png" width="25"></a>
 									</div>
