@@ -131,6 +131,13 @@
       background-size: cover;
     }
 
+    .les3 {
+      color: var(--vierdeKleur);
+      background: url(../images/apollo_vakken_ac4.jpg) !important;
+      background-size: cover;
+    }
+
+
     .les4 {
         color: var(--vierdeKleur);
         background: url(../images/apollo_vakken_gd4.jpg) !important;
@@ -141,6 +148,12 @@
         color: var(--vierdeKleur);
         background: url(../images/apollo_vakken_bb4.jpg) !important;
         background-size: contain;
+    }
+
+    .les6 {
+        color: var(--vierdeKleur);
+        background: url(../images/apollo_vakken_cme4.jpg) !important;
+        background-size: cover;
     }
 
     .les7 {
@@ -207,6 +220,12 @@
     .vs6 .content-vraag-gebruikersFoto {
         /*Gebruikersfoto voor Gebruiker 2 in vragenlijst.html*/
         background: url(../images/apollo_personen_6.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .vs8 {
+        background: url(../images/apollo_personen_8.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
