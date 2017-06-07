@@ -67,7 +67,7 @@ function main() {
 
 
 
-    if (window.location.href.match('vraag.html') == null) {
+    if (window.location.href.match('vraag.html') !== null) {
         //Quill.js implementatie in vraag.html
         var editor = document.getElementById("editor");
         var quill = new Quill('#editor', {
@@ -115,7 +115,7 @@ function main() {
         reactiesBeantwoord.addEventListener('click', toggleToolbar, false);
     }
 
-    if (window.location.href.match('vragenlijst.html') == null) {
+    if (window.location.href.match('vragenlijst.html') !== null) {
         //upvote systeem
       var rating = document.getElementsByClassName("rating");
 
@@ -125,7 +125,11 @@ function main() {
                 var dataAttribuut = this.getAttribute("data-likes");
                 var aantalLikes = Number(dataAttribuut);
                 if(this.className === "rating voted") {
-                  console.log("Je hebt al gestemd");
+                  var dislike = aantalLikes - 1;
+                  this.setAttribute("data-likes", dislike);
+                  console.log("Je trekt je stem terug in, het aantal nieuwe likes: " + this.getAttribute("data-likes"));
+                  this.className="rating";
+                  this.innerHTML = "<img src=\"./images/apollo_icon_1.png\" width=\"25\">" + " +" + dislike;
                 } else {
                   var nieuwAantalLikes = aantalLikes + 1;
                   this.setAttribute("data-likes", nieuwAantalLikes);
