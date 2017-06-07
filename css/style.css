@@ -500,8 +500,7 @@ width: 80vw;
 height: 100vh;
 position: absolute;
 left: 20vw;
-padding: 150px 0px 100px 5vw;
-overflow-y: scroll;
+padding: 40px 0px 100px 5vw;
 }
 
 div.content-vraag-info {

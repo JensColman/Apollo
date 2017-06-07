@@ -41,7 +41,7 @@ function main() {
       nieuweVraag.className = 'content-vraag-sectie vs5';
   }
 
-  var toevoegenVraag = document.getElementsByClassName("toevoegenVraag")[0];
+  var toevoegenVraag = document.getElementById("vraagtoevoegen");
   toevoegenVraag.addEventListener('click', vraagStellen, false);
 
   /*// Om .les dezelfde hoogte als breedte te geven
