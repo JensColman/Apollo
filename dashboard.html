@@ -1,75 +1,129 @@
 <!doctype html>
 <html>
-	<head>
-		<title>Apollo</title>
-		<link rel="stylesheet" type="text/css" href="css/reset.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:300,500,900" rel="stylesheet">
-		<meta charset="utf-8">
-	</head>
-	<body>
 
-		<div class="achtergrond"></div>
-		<div class="navigatie">
-			<img class="logo" src="images/LogoWit.png" alt="Logo">
-			<div class="eigenFoto"></div>
-			<h1>Naam Achternaam</h1>
-			<h5 class="credits">Credits: 23</h5>
-			<nav>
-				<a class="navLink" href="#"><li>Lessen</li></a>
-				<a class="navLink" href="#"><li>Instellingen</li></a>
-			</nav>
-		</div>
+<head>
+	<title>Apollo</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,500,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
 
-		<div class="content">
-			<h3>Lessen</h3>
-			<a href="#">
-				<div class="contentVlak">
-					<h2>Kernproject 4</h2>
-					<p>Lorem ipsum dolor sit amet, at sea porro error dicunt, laudem possit urbanitas et duo. Duo eu veniam meliore reformidans, cu debet choro aliquip cum. Pro cu eligendi dissentiunt. No qui quidam mentitum molestiae, noster graecis legendos nec ea.</p>
-				</div>
-			</a>
+<body>
 
-			<a href="#">
-				<div class="contentVlak">
-					<h2>Kernproject 4</h2>
-					<p>Lorem ipsum dolor sit amet, at sea porro error dicunt, laudem possit urbanitas et duo. Duo eu veniam meliore reformidans, cu debet choro aliquip cum. Pro cu eligendi dissentiunt. No qui quidam mentitum molestiae, noster graecis legendos nec ea.</p>
-				</div>
-			</a>
+	<div class="container-fluid achtergrond"></div>
+	<div class="container-fluid achtergrondOverlay"></div>
 
-			<a href="#">
-				<div class="contentVlak">
-					<h2>Kernproject 4</h2>
-					<p>Lorem ipsum dolor sit amet, at sea porro error dicunt, laudem possit urbanitas et duo. Duo eu veniam meliore reformidans, cu debet choro aliquip cum. Pro cu eligendi dissentiunt. No qui quidam mentitum molestiae, noster graecis legendos nec ea.</p>
-				</div>
-			</a>
+	<div class="menuDisplayed" id="wrapper">
 
-			<a href="#">
-				<div class="contentVlak">
-					<h2>Kernproject 4</h2>
-					<p>Lorem ipsum dolor sit amet, at sea porro error dicunt, laudem possit urbanitas et duo. Duo eu veniam meliore reformidans, cu debet choro aliquip cum. Pro cu eligendi dissentiunt. No qui quidam mentitum molestiae, noster graecis legendos nec ea.</p>
-				</div>
-			</a>
-
-			<a href="#">
-				<div class="contentVlak">
-					<h2>Kernproject 4</h2>
-					<p>Lorem ipsum dolor sit amet, at sea porro error dicunt, laudem possit urbanitas et duo. Duo eu veniam meliore reformidans, cu debet choro aliquip cum. Pro cu eligendi dissentiunt. No qui quidam mentitum molestiae, noster graecis legendos nec ea.</p>
-				</div>
-			</a>
-
-			<a href="#">
-				<div class="contentVlak">
-					<h2>Kernproject 4</h2>
-					<p>Lorem ipsum dolor sit amet, at sea porro error dicunt, laudem possit urbanitas et duo. Duo eu veniam meliore reformidans, cu debet choro aliquip cum. Pro cu eligendi dissentiunt. No qui quidam mentitum molestiae, noster graecis legendos nec ea.</p>
-				</div>
-			</a>
+		<!-- Sidebar -->
+		<div id="sidebar-wrapper">
+			<ul class="sidebar-nav">
+				<img class="logoNav" src="./images/LogoWit.png" alt="Logo">
+				<div class="eigenFoto"></div>
+				<h3 class="sidebar-naam">Niels De Smet</h3>
+				<h5>Credits: 23</h5>
+				<li><a href="dashboard.html">Lessen</a></li>
+				<li><a href="#">Rapport</a></li>
+				<li><a href="#">Instellingen</a></li>
+			</ul>
 		</div>
 
 
 
+		<div id="page-content-wrapper">
+			<a class="knopFixed" id="menu-toggle" href="#">
+				<div class="hamburger">
+					<div id="rect1"></div>
+					<div id="rect2"></div>
+					<div id="rect3"></div>
+				</div>
+			</a>
+
+			<!-- Page content -->
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class=" ad col-lg-12">
+						<h1 class="hoofdtitel">Lessen</h1>
+					</div>
+				</div>
+				<div class="lessen">
+					<div class="les les1">KP4
+						<a class="insideLes" href="vragenlijst.html">Vragenlijst</a>
+						<a class="insideLes" href="toets.html">Toets</a>
+						<a class="insideLes" href="#">...</a>
+					</div>
+					<div class="les les2">CMT4
+						<a class="insideLes" href="vragenlijst.html">Vragenlijst</a>
+						<a class="insideLes" href="toets.html">Toets</a>
+						<a class="insideLes" href="#">...</a>
+					</div>
+					<div class="les les3">AC4
+						<a class="insideLes" href="vragenlijst.html">Vragenlijst</a>
+						<a class="insideLes" href="toets.html">Toets</a>
+						<a class="insideLes" href="#">...</a>
+					</div>
+					<div class="les les4">GD4
+						<a class="insideLes" href="vragenlijst.html">Vragenlijst</a>
+						<a class="insideLes" href="toets.html">Toets</a>
+						<a class="insideLes" href="#">...</a>
+					</div>
+					<div class="les les5">BB4
+						<a class="insideLes" href="vragenlijst.html">Vragenlijst</a>
+						<a class="insideLes" href="toets.html">Toets</a>
+						<a class="insideLes" href="#">...</a>
+					</div>
+					<div class="les les6">CME4
+						<a class="insideLes" href="vragenlijst.html">Vragenlijst</a>
+						<a class="insideLes" href="toets.html">Toets</a>
+						<a class="insideLes" href="#">...</a>
+					</div>
+					<div class="les les7">UID4
+						<a class="insideLes" href="vragenlijst.html">Vragenlijst</a>
+						<a class="insideLes" href="toets.html">Toets</a>
+						<a class="insideLes" href="#">...</a>
+					</div>
+					<a href="#popup1">
+						<div id="toevoegenVak" class="les toevoegen toevoegenLes">
+							<div class="rechtLijn"></div>
+							<div class="neerLijn"></div>
+						</div>
+					</a>
+					<div id="popup1" class="overlay">
+						<div class="popup">
+							<h2>Nieuw vak toevoegen</h2>
+							<a class="close" href="#">&times;</a>
+					      <form onsubmit="return false">
+					          <p>Kies een vak om toe te voegen</p>
+						         <select id="vakKiezen" name="vak-kiezen">
+						          <option value="AC4">Anderstalige Communicatie 4</option>
+						          <option value="BB4">Bedrijfsbeleid 4</option>
+						          <option value="CMT4">Crossmediatechnologie 4</option>
+						          <option value="CME4">Crossmedia experiment 4</option>
+						          <option value="GD4">Grafisch design 4</option>
+						          <option value="KP4">Kernproject 4</option>
+						          <option value="UID4">Usability &amp; interaction Design 4</option>
+						        </select>
+						        <button id="vaktoevoegen"value="Toevoegen" style="margin-top: 25px; padding: 5px;">Toevoegen</button>
+					      </form>
+						 </div>
+					</div>
+				</div><!--einde div.lessen-->
+			</div><!--einde div.container-fluid-->
+		</div>
+	</div>
 
 
-		<script src="js/index.js"></script>
-	</body>
+
+
+
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
 </html>

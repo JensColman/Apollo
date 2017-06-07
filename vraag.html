@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Apollo</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,500,900" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://cdn.quilljs.com/1.2.4/quill.snow.css" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+
+<body>
+
+	<div class="container-fluid achtergrond"></div>
+	<div class="container-fluid achtergrondOverlay"></div>
+
+	<div class="menuDisplayed" id="wrapper">
+
+		<!-- Sidebar -->
+		<div id="sidebar-wrapper">
+			<ul class="sidebar-nav">
+				<img class="logoNav" src="./images/LogoWit.png" alt="Logo">
+				<div class="eigenFoto"></div>
+				<h3 class="sidebar-naam">Niels De Smet</h3>
+				<h5>Credits: 23</h5>
+				<li><a href="dashboard.html">Lessen</a></li>
+				<li><a href="#">Rapport</a></li>
+				<li><a href="#">Instellingen</a></li>
+			</ul>
+		</div>
+
+		<div id="page-content-wrapper">
+			<a class="knopFixed" id="menu-toggle" href="#">
+				<div class="hamburger">
+					<div id="rect1"></div>
+					<div id="rect2"></div>
+					<div id="rect3"></div>
+				</div>
+			</a>
+
+			<!-- Page content -->
+			<div class="container-fluid">
+				<div class="row">
+					<div class=" ad col-lg-12">
+						<h1 class="dashboard-hoofdtitel">CMT4</h1>
+						<h2 class="dashboard-subtitel">Onderwerp: "Please try running this command again as Root/Administrator" error</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="content">
+						<div class="content-vraag-sectie vs1">
+							<div class="content-vraag-info">
+								<div class="content-vraag-gebruikersFoto gebruikersFoto"></div>
+								<div class="content-vraag-gebruikersInfo">
+									<h6 class="content-vraag-naam"><a class="content-vraag-gebruiker"href="">Dieter Vandenbroeck</a></h6>
+									<h6 class="content-vraag-datum">16/05/2017 14:20</h6>
+								</div>
+							</div><!--einde div .content-vraag-info-->
+
+							<div class="content-vraag-stelling">
+								<div class="streep"></div>
+									<p class="content-vraag-tekst">Iemand die mij kan helpen? Ik wil voor Opdracht 2 dus express.js installeren en het werkt niet.</p>
+									<p class="content-vraag-tekst">Specifiek typ ik dit in mijn terminal: "npm install express --save"</p>
+									<p class="content-vraag-tekst">Ik krijg dan de melding: "npm ERR! Please try running this command again as root/Administrator"</p>
+								<div class="content-rating">
+										<a class="rating"href="#" data-likes="20"><img src="./images/apollo_icon_1.png" width="25">+20</a>
+								</div>
+							</div><!--einde div .content-vraag-stelling-->
+						</div><!--einde div .content-vraag-sectie-->
+
+						<div class="content-tools">
+							<button id="vraag-beantwoord" class="button-tool">Beantwoord</button>
+						</div>
+
+						<div id="sectie-beantwoorden" class="tool-wrapper onzichtbaar">
+							<div id="toolbar"></div>
+							<div id="editor"></div>
+							<input type="submit" class="submit-button">
+						</div>
+
+						<div id="sectie-antwoorden" class="content-vraag-sectie antwoorden">
+								<h3  class="dashboard-antwoorden">Reacties</h3>
+								<div class="previous-next">
+										<a href="#"><<</a>
+										<a href="#" class="previous-next-active">1</a>
+										<a href="#">2</a>
+										<a href="#">3</a>
+										<a href="#">...</a>
+										<a href="#">10</a>
+										<a href="#">>></a>
+								</div>
+					      <div class="antwoord">
+									<div class="content-vraag-info vs4">
+										<div class="content-vraag-gebruikersFoto gebruikersFoto"></div>
+										<div class="content-vraag-gebruikersInfo">
+											<h6 class="content-vraag-naam"><a class="content-vraag-gebruiker"href="">Nigel Ekundu</a></h6>
+											<h6 class="content-vraag-datum">16/05/2017 14:30</h6>
+										</div>
+									</div><!--einde div .content-vraag-info-->
+					        <p class="content-vraag-tekst">In de terminal ben je niet de administrator, dus je kan een aantal commands niet uitvoeren. Als je gewoon "sudo" ervoor schrijft, dan moet alles normaal werken.</p>
+									<div class="content-rating">
+											<a class="rating"href="#" data-likes="15"><img src="./images/apollo_icon_1.png" width="25">+15</a>
+											<a href="#" class="">Reageer</a>
+									</div>
+
+									<div class="streep-2"></div>
+								</div><!--einde div .antwoord-->
+								<div class="antwoord">
+									<div class="content-vraag-info vs3">
+										<div class="content-vraag-gebruikersFoto gebruikersFoto"></div>
+										<div class="content-vraag-gebruikersInfo">
+											<h6 class="content-vraag-naam"><a class="content-vraag-gebruiker"href="">Lisa Wong</a></h6>
+											<h6 class="content-vraag-datum">16/05/2017 14:30</h6>
+										</div>
+									</div><!--einde div .content-vraag-info-->
+					        <p class="content-vraag-tekst">Je kan misschien terug opnieuw beginnen met dat mapje van node_modules. Wie weet is het een bug van npm of Node?.</p>
+									<div class="content-rating">
+											<a class="rating"href="#" data-likes="1"><img src="./images/apollo_icon_1.png" width="25">+1</a>
+									</div>
+									<div class="streep-2"></div>
+								</div><!--einde div .antwoord-->
+								<div class="antwoord">
+									<div class="content-vraag-info vs5">
+										<div class="content-vraag-gebruikersFoto gebruikersFoto"></div>
+										<div class="content-vraag-gebruikersInfo">
+											<h6 class="content-vraag-naam"><a class="content-vraag-gebruiker"href="">Niels De Smet</a></h6>
+											<h6 class="content-vraag-datum">16/05/2017 15:00</h6>
+										</div>
+									</div><!--einde div .content-vraag-info-->
+					        <p class="content-vraag-tekst"><a href="#">@Nigel</a> Je kan ook de user veranderen</p>
+									<p class="content-vraag-tekst">sudo chown -R $USER /usr/local</p>
+									<div class="content-rating">
+											<a class="rating"href="#" data-likes="0"><img src="./images/apollo_icon_1.png" width="25"></a>
+									</div>
+									<div class="previous-next">
+											<a href="#"><<</a>
+											<a href="#" class="previous-next-active">1</a>
+											<a href="#">2</a>
+											<a href="#">3</a>
+											<a href="#">...</a>
+											<a href="#">10</a>
+											<a href="#">>></a>
+									</div>
+								</div><!--einde div .antwoord-->
+						</div><!--einde div .content-vraag-sectie antwoorden-->
+
+					</div><!--einde div .content-->
+				</div><!--einde div .row-->
+			</div><!--einde div .container-fluid-->
+			</div><!--einde div #page-content-wrapper-->
+			</div><!--einde div #wrapper-->
+
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+		<script src="https://cdn.quilljs.com/1.2.4/quill.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
