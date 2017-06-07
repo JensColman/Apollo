@@ -27,16 +27,17 @@ function main() {
     $(".vraagGebied").append('<div class="content-vraag-stelling nieuweVraag nieuweVraag2"></div>');
     $(".nieuweVraag2").append('<h4 class="content-vraag-titel">Maak een nieuwe vraag</h4>');
   });*/
+    if (window.location.href.match('toetsMaken.html') != null) {
+      $(".nieuweVraag1").click(function(){
+          $(".vs1").append('<h2 class="content-vraag-titel"><form><input placeholder="Stel een vraag" type="text" value="" style="margin-bottom: 10px; width: 100%; padding: 5px;"></form></h2><div class="streep"></div><form class="formAntwoord"><textarea placeholder="Antwoord van student" style="width: 100%; height: 100px; padding: 5px;"></textarea></form>');
+      });
 
+      $(".nieuweVraag2").click(function(){
+          $(".vs2").append('<h2 class="content-vraag-titel"><form><input placeholder="Stel een vraag" type="text" value="" style="margin-bottom: 10px; width: 100%; padding: 5px;"></form></h2><div class="streep"></div><form class="formAntwoord"><textarea placeholder="Antwoord van student" style="width: 100%; height: 100px; padding: 5px;"></textarea></form>');
+      });
+    }
 
-  $(".nieuweVraag1").click(function(){
-      $(".vs1").append('<h2 class="content-vraag-titel"><form><input placeholder="Stel een vraag" type="text" value="" style="margin-bottom: 10px; width: 100%; padding: 5px;"></form></h2><div class="streep"></div><form class="formAntwoord"><textarea placeholder="Antwoord van student" style="width: 100%; height: 100px; padding: 5px;"></textarea></form>');
-  });
-
-  $(".nieuweVraag2").click(function(){
-      $(".vs2").append('<h2 class="content-vraag-titel"><form><input placeholder="Stel een vraag" type="text" value="" style="margin-bottom: 10px; width: 100%; padding: 5px;"></form></h2><div class="streep"></div><form class="formAntwoord"><textarea placeholder="Antwoord van student" style="width: 100%; height: 100px; padding: 5px;"></textarea></form>');
-  });
-
+  
   if (window.location.href.match('vragenlijst.html') != null) {
     //Nieuwe vraag stellen in vragenlijst.html
 
