@@ -600,6 +600,10 @@ a.previous-next-active {
 color: var(--vierdeKleur);
 }
 
+a.voted, a.voted:hover, a.voted:focus {
+  color:rgb(72, 175, 89);
+}
+
 /* Login-pagina */
 
 body.page-login {

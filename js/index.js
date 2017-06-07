@@ -17,17 +17,28 @@ function main() {
             $(".lessen").append('<div class="les">' + strUser + '<a class="insideLes" href="#">Vragenlijst</a><a class="insideLes" href="#">Toets</a><a class="insideLes" href="#">...</a></div>');
         }
 
+  /*$(".nieuwVraagGebied").click(function(){
+    $(".vraagGebied").append('<div class="content-vraag-stelling nieuweVraag nieuweVraag2"></div>');
+    $(".nieuweVraag2").append('<h4 class="content-vraag-titel">Maak een nieuwe vraag</h4>');
+  });*/
+
+    if (window.location.href.match('toetsMaken.html') != null) {
+      $(".nieuweVraag1").click(function(){
+          $(".vs1").append('<h2 class="content-vraag-titel"><form><input placeholder="Stel een vraag" type="text" value="" style="margin-bottom: 10px; width: 100%; padding: 5px;"></form></h2><div class="streep"></div><form class="formAntwoord"><textarea placeholder="Antwoord van student" style="width: 100%; height: 100px; padding: 5px;"></textarea></form>');
+      });
         var vakToevoegenButton = document.getElementById("vaktoevoegen");
         vakToevoegenButton.addEventListener('click', vakToevoegen, false);
     }
 
-
+      $(".nieuweVraag2").click(function(){
+          $(".vs2").append('<h2 class="content-vraag-titel"><form><input placeholder="Stel een vraag" type="text" value="" style="margin-bottom: 10px; width: 100%; padding: 5px;"></form></h2><div class="streep"></div><form class="formAntwoord"><textarea placeholder="Antwoord van student" style="width: 100%; height: 100px; padding: 5px;"></textarea></form>');
+      });
+    }
 
     /*$(".nieuwVraagGebied").click(function(){
       $(".vraagGebied").append('<div class="content-vraag-stelling nieuweVraag nieuweVraag2"></div>');
       $(".nieuweVraag2").append('<h4 class="content-vraag-titel">Maak een nieuwe vraag</h4>');
     });*/
-
 
     $(".nieuweVraag1").click(function() {
         $(".vs1").append('<h2 class="content-vraag-titel"><form><input placeholder="Stel een vraag" type="text" value="" style="margin-bottom: 10px; width: 100%; padding: 5px;"></form></h2><div class="streep"></div><form class="formAntwoord"><textarea placeholder="Antwoord van student" style="width: 100%; height: 100px; padding: 5px;"></textarea></form>');
@@ -56,7 +67,7 @@ function main() {
 
 
 
-    if (window.location.href.match('vraag.html') = null) {
+    if (window.location.href.match('vraag.html') !== null) {
         //Quill.js implementatie in vraag.html
         var editor = document.getElementById("editor");
         var quill = new Quill('#editor', {
@@ -104,18 +115,32 @@ function main() {
         reactiesBeantwoord.addEventListener('click', toggleToolbar, false);
     }
 
-    //upvote systeem
-    var rating = document.getElementsByClassName("rating");
-    var i = 0;
+    if (window.location.href.match('vragenlijst.html') !== null) {
+        //upvote systeem
+      var rating = document.getElementsByClassName("rating");
 
-    for (i = 0; i < rating.length; i++) {
-         rating[i].addEventListener("click", function() {
-             this.innerHTML += 0;
-             return false;
-        });
-   }
+      for (i = 0; i < rating.length; i++) {
+           rating[i].addEventListener("click", function() {
+                console.log("Het aantal likes: " + this.getAttribute("data-likes"));
+                var dataAttribuut = this.getAttribute("data-likes");
+                var aantalLikes = Number(dataAttribuut);
+                if(this.className === "rating voted") {
+                  var dislike = aantalLikes - 1;
+                  this.setAttribute("data-likes", dislike);
+                  console.log("Je trekt je stem terug in, het aantal nieuwe likes: " + this.getAttribute("data-likes"));
+                  this.className="rating";
+                  this.innerHTML = "<img src=\"./images/apollo_icon_1.png\" width=\"25\">" + " +" + dislike;
+                } else {
+                  var nieuwAantalLikes = aantalLikes + 1;
+                  this.setAttribute("data-likes", nieuwAantalLikes);
+                  console.log("Het aantal nieuwe likes: " + this.getAttribute("data-likes"));
+                  this.className="rating voted"
+                  this.innerHTML = "<img src=\"./images/apollo_icon_2.png\" width=\"25\">" + " +" + nieuwAantalLikes;
+                }
+          });
+      }
 
-
+    }
 
 
 
