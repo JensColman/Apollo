@@ -47,6 +47,27 @@ function main() {
 
         var toevoegenVraag = document.getElementById("vraagToevoegen");
         toevoegenVraag.addEventListener('click', vraagStellen, false);
+
+        // checkbox van vragenlijst
+
+        $('.vraagImpl').click(function () {
+              if ($(this).find(".checkBox").is(':checked')) {
+                  $(this).find('#aToets').show();
+              } else {
+                  $(this).find('#aToets').hide();
+              }
+         });
+
+          //upvote systeem
+          var rating = document.getElementsByClassName("rating");
+          var i = 0;
+
+          for (i = 0; i < rating.length; i++) {
+               rating[i].addEventListener("click", function() {
+                   this.innerHTML += 0;
+                   return false;
+              });
+         }
     }
 
 
@@ -56,7 +77,7 @@ function main() {
 
 
 
-    if (window.location.href.match('vraag.html') = null) {
+    if (window.location.href.match('vraag.html') === null) {
         //Quill.js implementatie in vraag.html
         var editor = document.getElementById("editor");
         var quill = new Quill('#editor', {
@@ -104,16 +125,9 @@ function main() {
         reactiesBeantwoord.addEventListener('click', toggleToolbar, false);
     }
 
-    //upvote systeem
-    var rating = document.getElementsByClassName("rating");
-    var i = 0;
 
-    for (i = 0; i < rating.length; i++) {
-         rating[i].addEventListener("click", function() {
-             this.innerHTML += 0;
-             return false;
-        });
-   }
+
+
 
 
 
