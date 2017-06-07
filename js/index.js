@@ -115,7 +115,7 @@ function main() {
         reactiesBeantwoord.addEventListener('click', toggleToolbar, false);
     }
 
-    if (window.location.href.match('vragenlijst.html') !== null) {
+    if (window.location.href.match('vragenlijst.html') !== null || window.location.href.match('vraag.html') !== null) {
         //upvote systeem
       var rating = document.getElementsByClassName("rating");
 
