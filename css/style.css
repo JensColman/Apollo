@@ -646,6 +646,10 @@ a.previous-next-active {
     color: var(--vierdeKleur);
 }
 
+/* Oppassen, gaf een foutmelding in github bij de pull request */
+a.voted, a.voted:hover, a.voted:focus {
+  color:rgb(72, 175, 89);
+}
 
 /* Login-pagina */
 
