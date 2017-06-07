@@ -37,7 +37,7 @@ function main() {
       });
     }
 
-  
+
   if (window.location.href.match('vragenlijst.html') != null) {
     //Nieuwe vraag stellen in vragenlijst.html
 
@@ -95,8 +95,27 @@ function main() {
   }
 
 
+  var rating = document.getElementsByClassName("rating");
 
+  for (i = 0; i < rating.length; i++) {
+       rating[i].addEventListener("click", function() {
+            console.log("Het aantal likes: " + this.getAttribute("data-likes"));
+            var dataAttribuut = this.getAttribute("data-likes");
+            var aantalLikes = Number(dataAttribuut);
+            if(this.className === "rating voted") {
+              console.log("Je hebt al gestemd");
+            } else {
+              var nieuwAantalLikes = aantalLikes + 1;
+              this.setAttribute("data-likes", nieuwAantalLikes);
+              console.log("Het aantal nieuwe likes: " + this.getAttribute("data-likes"));
+              this.className="rating voted"
+              this.innerHTML = "<img src=\"./images/apollo_icon_2.png\" width=\"25\">" + " +" + nieuwAantalLikes;
+            }
 
+           //this.innerHTML += 0;
+           //return false;
+      });
+  }
 
 
 }
