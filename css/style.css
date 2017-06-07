@@ -1,659 +1,713 @@
-        /* Body en achtergrond */
-
-    body {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 300;
-        color: var(--vierdeKleur);
-        background: lightgrey;
-        --eersteKleur: rgb(255, 255, 255);
-        --tweedeKleur: rgb(178, 178, 178);
-        --derdeKleur: rgb(31, 69, 86);
-        --vierdeKleur: rgb(21, 39, 58);
-        --vijfdeKleur: rgb(242, 158, 6);
-        position: relative;
-        overflow-x: hidden;
-    }
-
-    .achtergrond {
-        background: url(../images/Dashboard1.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100vw;
-        height: 100vh;
-        position: fixed;
-        /*filter: blur(5px);*/
-    }
-
-    .achtergrondOverlay {
-        background: rgba(0, 0, 0, 0.5);
-        width: 100vw;
-        height: 100vh;
-        position: fixed;
-    }
-    /* Sidebar */
-
-    #sidebar-wrapper {
-        z-index: 1;
-        position: fixed;
-        width: 0;
-        height: 100vh;
-        overflow-y: hidden;
-        background: var(--derdeKleur);
-    }
-    /* Verander de breedte van de sidebar om het te laten zien */
-
-    #wrapper.menuDisplayed #sidebar-wrapper {
-        width: 20vw;
-    }
-
-    #wrapper.menuDisplayed #page-content-wrapper {
-        padding-left: 25vw;
-    }
-    /* Sidebar styling */
-
-    .sidebar-nav {
-        padding: 0;
-        list-style: none;
-    }
-
-    .sidebar-nav li {
-        line-height: 40px;
-        text-align: center;
-    }
-
-    .sidebar-nav li a {
-        display: block;
-        text-decoration: none;
-        color: var(--eersteKleur);
-    }
-
-    .sidebar-nav li a:hover {
-        background: rgba(0, 0, 0, 0.2);
-    }
-
-    .logoNav {
-        width: 10vw;
-        position: relative;
-        left: 50%;
-        transform: translate(-50%);
-        margin-top: 50px;
-        margin-bottom: 20px;
-    }
-
-    .eigenFoto {
-        border-radius: 50%;
-        border: 0.3vw solid var(--tweedeKleur);
-        box-sizing: border-box;
-        width: 10vw;
-        height: 10vw;
-        margin-bottom: 10px;
-        position: relative;
-        left: 50%;
-        transform: translate(-50%);
-        background: url(../images/apollo_personen_5.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-
-
-    /*Beelden*/
-    .gebruikersFoto {
-        border-radius: 50%;
-        border: 0.2vw solid var(--tweedeKleur);
-        box-sizing: border-box;
-        width: 5vw;
-        height: 5vw;
-        margin-bottom: 10px;
-        position: relative;
-        background: url(../images/default-placeholder.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    div.content-vraag-gebruikersFoto {
-        /*Gebruikersfoto in vragenlijst.html*/
-        width: 4vw;
-        height: 4vw;
-        margin-right: 1em;
-    }
-
-    .les1 {
-      color: var(--vijfdeKleur);
-      background: url(../images/apollo_vakken_kp4.jpg) !important;
-      background-size: cover;
-    }
-
-    .les2 {
-      color: var(--eersteKleur);
-      background: url(../images/apollo_vakken_cmt4.jpg) !important;
-      background-size: cover;
-    }
-
-    .les3 {
-      color: var(--vierdeKleur);
-      background: url(../images/apollo_vakken_ac4.jpg) !important;
-      background-size: cover;
-    }
-
-
-    .les4 {
-        color: var(--vierdeKleur);
-        background: url(../images/apollo_vakken_gd4.jpg) !important;
-        background-size: cover;
-    }
-
-    .les5 {
-        color: var(--vierdeKleur);
-        background: url(../images/apollo_vakken_bb4.jpg) !important;
-        background-size: contain;
-    }
-
-    .les6 {
-        color: var(--vierdeKleur);
-        background: url(../images/apollo_vakken_cme4.jpg) !important;
-        background-size: cover;
-    }
-
-    .les7 {
-        color: var(--vierdeKleur);
-        background: url(../images/apollo_vakken_uid4.jpg) !important;
-        background-size: contain;
-    }
-
-    .rechtLijn {
-         width: 20%;
-         height: 60%;
-         background-color: black;
-         position: relative;
-         top: 50%;
-         left: 50%;
-         transform: translate(-50%, -50%);
-    }
-
-    .neerLijn {
-         width: 60%;
-         height: 20%;
-         background-color: black;
-         position: relative;
-         top: -50%;
-         left: 50%;
-         transform: translate(-50%, 150%);
-    }
-
-    .vs1 .content-vraag-gebruikersFoto {
-        /*Gebruikersfoto voor Gebruiker 1 in vragenlijst.html*/
-        background: url(../images/apollo_personen_2.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .vs2 .content-vraag-gebruikersFoto {
-        /*Gebruikersfoto voor Gebruiker 2 in vragenlijst.html*/
-        background: url(../images/apollo_personen_1.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .vs3 .content-vraag-gebruikersFoto {
-        /*Gebruikersfoto voor Gebruiker 2 in vragenlijst.html*/
-        background: url(../images/apollo_personen_3.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .vs4 .content-vraag-gebruikersFoto {
-        /*Gebruikersfoto voor Gebruiker 2 in vragenlijst.html*/
-        background: url(../images/apollo_personen_4.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .vs5 .content-vraag-gebruikersFoto {
-        /*Gebruikersfoto voor Gebruiker 2 in vragenlijst.html*/
-        background: url(../images/apollo_personen_5.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .vs6 .content-vraag-gebruikersFoto {
-        /*Gebruikersfoto voor Gebruiker 2 in vragenlijst.html*/
-        background: url(../images/apollo_personen_6.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .vs8 {
-        background: url(../images/apollo_personen_8.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    /*  Hamburger menu */
-
-    .knopFixed {
-        position: fixed;
-        top: 30px;
-    }
-
-    #wrapper.menuDisplayed .knopFixed {
-        left: 30px;
-        z-index: 500;
-        opacity: 0.2;
-    }
-
-    .hamburger {
-        position: fixed;
-        left: 30px;
-        min-width: 2vw;
-        max-width: 5vw;
-        transform: scale(0.5);
-    }
-
-    #rect1 {
-        background: var(--eersteKleur);
-        width: 35px;
-        height: 5px;
-        margin-bottom: 7px;
-    }
-
-    #rect2 {
-        background: var(--eersteKleur);
-        width: 35px;
-        height: 5px;
-        margin-bottom: 7px;
-    }
-
-    #rect3 {
-        background: var(--eersteKleur);
-        width: 35px;
-        height: 5px;
-    }
-    /* Algemene styling */
-
-    /* Headings */
-
-    h1.hoofdtitel {
-        color: var(--eersteKleur) !important;
-        font-weight: 500 !important;
-        font-size: 40pt !important;
-        width: 15vw;
-        position: relative;
-        margin-bottom: 4vw !important;
-        text-align: left;
-    }
-    h1.dashboard-hoofdtitel {
-        color: var(--vijfdeKleur) !important;
-        font-weight: 500 !important;
-        font-size: 35pt !important;
-        width: 30vw;
-        position: relative;
-        text-align: left;
-    }
-
-    h2.dashboard-subtitel {
-        color: var(--eersteKleur) !important;
-        font-weight: 500 !important;
-        font-size: 30pt !important;
-        position: relative;
-        margin-bottom: 4vw !important;
-        text-align: left;
-    }
-
-
-    h3 {
-        font-size: 15pt;
-        font-weight: 900 !important;
-        text-align: center;
-        color: var(--eersteKleur) !important;
-        margin: 0px 1.5vw 0px 1.5vw;
-    }
-
-    h3.sidebar-naam {
-        font-weight: 600 !important;
-    }
-
-    h3.dashboard-antwoorden {
-        font-size: 16pt;
-        text-align: left;
-        color: var(--vierdeKleur) !important;
-        font-weight: normal !important;
-
-    }
-
-    h4 {
-        font-size: 2em !important;
-        position: relative;
-        text-align: center;
-        color: white !important;
-    }
-
-    h5 {
-        font-size: 12pt;
-        font-weight: 300 !important;
-        text-align: center;
-        color: var(--eersteKleur) !important;
-        margin: 0px 1.5vw 0px 1.5vw;
-        margin-bottom: 30px !important;
-    }
-
-    /* Main content */
-
-    #page-content-wrapper {
-        width: 100%;
-        position: absolute;
-        padding: 100px 10vw 50px 10vw;
-    }
-
-    .lessen {}
-
-    .les {
-        height: 10vw;
-        width: 10vw;
-        background: rgba(255, 255, 255, 0.5);
-        display: block;
-        float: left;
-        margin-right: 4vw;
-        margin-bottom: 4vw;
-        text-align: center;
-        font-size: 3vw !important;
-        font-weight: 500;
-        padding-top: 3vw;
-    }
-
-    .les:hover .insideLes {
-        display: block;
-    }
-
-    .les:hover {
-        background: rgba(0, 0, 0, 1);
-    }
-
-    .insideLes:hover {
-        background: rgba(0, 0, 0, 1);
-        color: var(--vijfdeKleur);
-    }
-
-    .insideLes {
-        font-size: 50%;
-        background: rgba(0, 0, 0, 1);
-        position: relative;
-        display: none;
-        float: left;
-        width: 10vw;
-        height: 3.34vw;
-        top: -7.26vw;
-        text-decoration: none !important;
-        line-height: 2.25;
-        color: var(--tweedeKleur);
-    }
-
-    .lesToev {
-         padding: 0;
-    }
-
-    .lesToev:hover {
-        background: rgba(255, 255, 255, 0.2);
-    }
-
-    .lesToev:hover .rechtLijn {
-        background: var(--vijfdeKleur);
-    }
-
-    .lesToev:hover .neerLijn {
-        background: var(--vijfdeKleur);;
-    }
-
-    .content-vraag-sectie {
-         background: rgba(255, 255, 255, 1);
-         width: 70%;
-         padding: 4vw;
-         margin: 0 auto 30px auto;
-    }
-
-    .antwoorden {
-        background: rgba(255, 255, 255, 0.9);
-    }
-
-    .antwoord {
-        width: 100%;
-        padding: 4vw;
-    }
-
-    .toetsMaken {
-         background: rgba(255, 255, 255, 1);
-         width: 70%;
-         padding: 1vw;
-         margin: 0 auto 0px auto;
-    }
-
-    .nieuweVraag {
-         background: lightgrey;
-         padding: 5px;
-    }
-
-    .nieuwVraagGebied {
-         background: lightgrey;
-         padding: 5px;
-         width: 70%;
-         margin: 0 auto 30px auto;
-    }
-
-    <<<<<<< HEAD .content {
-        width: 80vw;
-        height: 100vh;
-        position: absolute;
-        left: 20vw;
-        padding: 150px 0px 100px 5vw;
-        overflow-y: scroll;
-    }
-
-    div.content-vraag-info {
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    div.content-rating {
-        margin-top: 25px;
-    }
-
-    div.previous-next {
-        font-size: 13pt;
-        text-align: center;
-        margin-top: 25px;
-    }
-
-    div.content-tools {
-        padding: 10px;
-        margin: -40px auto 50px auto;
-    }
-
-    button.button-tool {
-        width: 30%;
-        font-weight: 700 !important;
-        text-align: center;
-        color: var(--vierdeKleur)
-        background-color: var(--eersteKleur);
-        border: 0;
-        padding: 8px 15px;
-        margin-right: 15px;
-    }
-
-    button.button-tool:hover {
-        color: var(--eersteKleur);
-        background-color: var(--vijfdeKleur);
-    }
-
-    div.tool-wrapper {
-        margin-bottom: 50px;
-    }
-
-    .ql-toolbar.ql-snow {
-        width: 70%;
-        background: white !important;
-        margin: 0 auto;
-    }
-
-    #editor {
-        width: 70%;
-        height: 150px;
-        background-color: var(--eersteKleur);
-        box-shadow: 1px 1px 5px var(--vierdeKleur);
-        margin: 0 auto;
-    }
-
-    .content-tools {
-        text-align: center;
-    }
-
-    .onzichtbaar {
-        display: none;
-    }
-
-    /*Grafische elementen*/
-
-    .streep {
-         /*Scheidingslijn te gebruiken in vragenlijst.html*/
-         width: 100%;
-         border-bottom: 2px solid var(--vierdeKleur);
-         margin-bottom: 20px;
-         opacity: 0.3;
-    }
-
-    .streep-2 {
-        width: 90%;
-        height: 1.5px;
-        background: var(--vierdeKleur);
-        opacity: 0.2;
-        margin: 60px auto 0 auto;
-     }
-
-    /*Paragrafen en links*/
-
-    p.content-vraag-tekst {
-        width: 90%;
-        line-height: 20px;
-        margin-bottom: 25px;
-    }
-
-    a.leesMeer {
-        margin-top: 20px;
-        text-decoration: underline;
-    }
-
-    a.previous-next-active {
-        color: var(--vierdeKleur);
-    }
-
-    /* Login-pagina */
-
-    body.page-login {
-        background-color: var(--vierdeKleur);
-    }
-
-    div.login-box {
-        width: 25%;
-        height: 350px;
-        background-color: rgb(249, 249, 249);
-        border-radius: 5px;
-        border: 1px solid rgb(231, 231, 231);
-        margin: 150px auto 0 auto;
-        padding: 20px;
-    }
-
-    div.form-group {
-        width: 85%;
-        margin: 0 auto;
-    }
-
-    img.login-profile {
-        width: 25%;
-        max-width: 30%;
-        border-radius: 150px;
-        box-shadow: 2px 2px 15px var(--vierdeKleur);
-        margin: 0 auto;
-        position: relative;
-        bottom: 65px;
-        left: 50%;
-        transform: translate(-50%);
-    }
-
-    input.login-input {
-        margin-bottom: 30px;
-    }
-
-    button.login-signin, button.login-signin:hover {
-        color: var(--eersteKleur);
-        font-size: 16px;
-        background-color: var(--vijfdeKleur);
-        border: none;
-        position: relative;
-        left: 50%;
-        transform: translate(-50%);
-        padding: 10px 15px;
-        margin-bottom: 20px;
-    }
-
-    input.submit-button {
-        position: relative;
-        left: 50%;
-        transform: translate(-50%);
-    }
-    /*Media queries*/
-
-    @media (max-width: 1000px) {
-         #wrapper.menuDisplayed #sidebar-wrapper {
-             width: 25vw;
-        }
-
-         #wrapper.menuDisplayed #page-content-wrapper {
-             padding-left: 30vw;
-         }
-    }
-
-    @media (max-width: 1400px) {}
-
-    @media (max-width: 1100px) {
-        div.login-box {
-            width: 34%;
-        }
-    }
-
-    @media (max-width: 885px) {
-        h1.dashboard-hoofdtitel{
-            font-size: 30pt !important;
-        }
-        h2.dashboard-subtitel {
-            font-size: 25pt !important;
-        }
-        div.content-vraag-sectie {
-            /*Kaders in vragenlijst.html*/
-            width: 95%;
-        }
-        div.login-box {
-            width: 40%;
-        }
-    }
-
-    @media (max-width: 850px) {
-        div.login-box {
-            width: 50%;
-        }
-    }
-
-    @media (max-width: 555px) {
-        h1.dashboard-hoofdtitel{
-            font-size: 25pt !important;
-        }
-        h2.dashboard-subtitel {
-            font-size: 20pt !important;
-        }
-        div.login-box {
-            width: 90%;
-        }
-        div.content-vraag-sectie {
-            /*Kaders in vragenlijst.html*/
-            width: 100%;
-        }
-     }
+/* Body en achtergrond */
+
+body {
+font-family: 'Roboto', sans-serif;
+font-weight: 300;
+color: var(--vierdeKleur);
+background: lightgrey;
+--eersteKleur: rgb(255, 255, 255);
+--tweedeKleur: rgb(178, 178, 178);
+--derdeKleur: rgb(31, 69, 86);
+--vierdeKleur: rgb(21, 39, 58);
+--vijfdeKleur: rgb(242, 158, 6);
+position: relative;
+overflow-x: hidden;
+}
+
+.achtergrond {
+background: url(../images/Dashboard1.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+width: 100vw;
+height: 100vh;
+position: fixed;
+/*filter: blur(5px);*/
+}
+
+.achtergrondOverlay {
+background: rgba(0, 0, 0, 0.5);
+width: 100vw;
+height: 100vh;
+position: fixed;
+}
+/* Sidebar */
+
+#sidebar-wrapper {
+z-index: 1;
+position: fixed;
+width: 0;
+height: 100vh;
+overflow-y: hidden;
+background: var(--derdeKleur);
+}
+/* Verander de breedte van de sidebar om het te laten zien */
+
+#wrapper.menuDisplayed #sidebar-wrapper {
+width: 20vw;
+}
+
+#wrapper.menuDisplayed #page-content-wrapper {
+padding-left: 25vw;
+}
+/* Sidebar styling */
+
+.sidebar-nav {
+padding: 0;
+list-style: none;
+}
+
+.sidebar-nav li {
+line-height: 40px;
+text-align: center;
+}
+
+.sidebar-nav li a {
+display: block;
+text-decoration: none;
+color: var(--eersteKleur);
+}
+
+.sidebar-nav li a:hover {
+background: rgba(0, 0, 0, 0.2);
+}
+
+.logoNav {
+width: 10vw;
+position: relative;
+left: 50%;
+transform: translate(-50%);
+margin-top: 50px;
+margin-bottom: 20px;
+}
+
+.eigenFoto {
+border-radius: 50%;
+border: 0.3vw solid var(--tweedeKleur);
+box-sizing: border-box;
+width: 10vw;
+height: 10vw;
+margin-bottom: 10px;
+position: relative;
+left: 50%;
+transform: translate(-50%);
+background: url(../images/apollo_personen_5.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+
+/*Beelden*/
+.gebruikersFoto {
+border-radius: 50%;
+border: 0.2vw solid var(--tweedeKleur);
+box-sizing: border-box;
+width: 5vw;
+height: 5vw;
+margin-bottom: 10px;
+position: relative;
+background: url(../images/default-placeholder.png);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+div.content-vraag-gebruikersFoto {
+/*Gebruikersfoto in vragenlijst.html*/
+width: 4vw;
+height: 4vw;
+margin-right: 1em;
+}
+
+.les1 {
+color: var(--vijfdeKleur);
+background: url(../images/apollo_vakken_kp4.jpg) !important;
+background-size: cover;
+}
+
+.les2 {
+color: var(--eersteKleur);
+background: url(../images/apollo_vakken_cmt4.jpg) !important;
+background-size: cover;
+}
+
+.les3 {
+color: var(--vierdeKleur);
+background: url(../images/apollo_vakken_ac4.jpg) !important;
+background-size: cover;
+}
+
+
+.les4 {
+color: var(--vierdeKleur);
+background: url(../images/apollo_vakken_gd4.jpg) !important;
+background-size: cover;
+}
+
+.les5 {
+color: var(--vierdeKleur);
+background: url(../images/apollo_vakken_bb4.jpg) !important;
+background-size: contain;
+}
+
+.les6 {
+color: var(--vierdeKleur);
+background: url(../images/apollo_vakken_cme4.jpg) !important;
+background-size: cover;
+}
+
+.les7 {
+color: var(--vierdeKleur);
+background: url(../images/apollo_vakken_uid4.jpg) !important;
+background-size: contain;
+}
+
+.rechtLijn {
+ width: 20%;
+ height: 60%;
+ background-color: black;
+ position: relative;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+}
+
+.neerLijn {
+ width: 60%;
+ height: 20%;
+ background-color: black;
+ position: relative;
+ top: -50%;
+ left: 50%;
+ transform: translate(-50%, 150%);
+}
+
+.vs1 .content-vraag-gebruikersFoto {
+/*Gebruikersfoto voor Dieter Vandenbroeck in vragenlijst.html*/
+background: url(../images/apollo_personen_2.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.vs2 .content-vraag-gebruikersFoto {
+/*Gebruikersfoto voor Ann Marynissen in vragenlijst.html*/
+background: url(../images/apollo_personen_1.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.vs3 .content-vraag-gebruikersFoto {
+/*Gebruikersfoto voor Lisa Wong in vragenlijst.html*/
+background: url(../images/apollo_personen_3.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.vs4 .content-vraag-gebruikersFoto {
+/*Gebruikersfoto voor Nigel Ekundu in vragenlijst.html*/
+background: url(../images/apollo_personen_4.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.vs5 .content-vraag-gebruikersFoto {
+/*Gebruikersfoto voor Niels De Smet in vragenlijst.html*/
+background: url(../images/apollo_personen_5.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.vs6 .content-vraag-gebruikersFoto {
+/*Gebruikersfoto voor Tim Herrewege in vragenlijst.html*/
+background: url(../images/apollo_personen_6.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.vs8 {
+background: url(../images/apollo_personen_8.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+/*  Hamburger menu */
+
+.knopFixed {
+position: fixed;
+top: 30px;
+}
+
+#wrapper.menuDisplayed .knopFixed {
+left: 30px;
+z-index: 500;
+opacity: 0.2;
+}
+
+.hamburger {
+position: fixed;
+left: 30px;
+min-width: 2vw;
+max-width: 5vw;
+transform: scale(0.5);
+}
+
+#rect1 {
+background: var(--eersteKleur);
+width: 35px;
+height: 5px;
+margin-bottom: 7px;
+}
+
+#rect2 {
+background: var(--eersteKleur);
+width: 35px;
+height: 5px;
+margin-bottom: 7px;
+}
+
+#rect3 {
+background: var(--eersteKleur);
+width: 35px;
+height: 5px;
+}
+/* Algemene styling */
+
+/* Headings */
+
+h1.hoofdtitel {
+color: var(--eersteKleur) !important;
+font-weight: 500 !important;
+font-size: 40pt !important;
+width: 15vw;
+position: relative;
+margin-bottom: 4vw !important;
+text-align: left;
+}
+h1.dashboard-hoofdtitel {
+color: var(--vijfdeKleur) !important;
+font-weight: 500 !important;
+font-size: 35pt !important;
+width: 30vw;
+position: relative;
+text-align: left;
+}
+
+h2.dashboard-subtitel {
+color: var(--eersteKleur) !important;
+font-weight: 500 !important;
+font-size: 30pt !important;
+position: relative;
+margin-bottom: 4vw !important;
+text-align: left;
+}
+
+
+h3 {
+font-size: 15pt;
+font-weight: 900 !important;
+text-align: center;
+color: var(--eersteKleur) !important;
+margin: 0px 1.5vw 0px 1.5vw;
+}
+
+h3.sidebar-naam {
+font-weight: 600 !important;
+}
+
+h3.dashboard-antwoorden {
+font-size: 16pt;
+text-align: left;
+color: var(--vierdeKleur) !important;
+font-weight: normal !important;
+
+}
+
+h4 {
+font-size: 2em !important;
+position: relative;
+text-align: center;
+color: white !important;
+}
+
+h5 {
+font-size: 12pt;
+font-weight: 300 !important;
+text-align: center;
+color: var(--eersteKleur) !important;
+margin: 0px 1.5vw 0px 1.5vw;
+margin-bottom: 30px !important;
+}
+
+/* Main content */
+
+#page-content-wrapper {
+width: 100%;
+position: absolute;
+padding: 100px 10vw 50px 10vw;
+}
+
+.lessen {}
+
+.les, .toevoegenVraag {
+height: 10vw;
+width: 10vw;
+background: rgba(255, 255, 255, 0.5);
+display: block;
+float: left;
+margin-right: 4vw;
+margin-bottom: 4vw;
+text-align: center;
+font-size: 3vw !important;
+font-weight: 500;
+padding-top: 3vw;
+}
+
+.toevoegenVraag {
+height: 3vw;
+width: 3vw;
+position: relative;
+left: 50px;
+}
+
+.les:hover .insideLes {
+display: block;
+}
+
+.les:hover {
+background: rgba(0, 0, 0, 1);
+}
+
+.insideLes:hover {
+background: rgba(0, 0, 0, 1);
+color: var(--vijfdeKleur);
+}
+
+.insideLes {
+font-size: 50%;
+background: rgba(0, 0, 0, 1);
+position: relative;
+display: none;
+float: left;
+width: 10vw;
+height: 3.34vw;
+top: -7.30vw;
+text-decoration: none !important;
+line-height: 2.25;
+color: var(--tweedeKleur);
+}
+
+.toevoegen {
+ padding: 0;
+}
+
+.toevoegen:hover {
+background: rgba(255, 255, 255, 0.2);
+}
+
+.toevoegen:hover .rechtLijn {
+background: var(--vijfdeKleur);
+}
+
+.toevoegen:hover .neerLijn {
+background: var(--vijfdeKleur);;
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.7);
+	transition: opacity 200ms;
+  visibility: hidden;
+	opacity: 0;
+  z-index: 100;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+	margin: 300px auto;
+	padding: 20px;
+	background: #fff;
+	border: 1px solid #666;
+	width: 300px;
+	box-shadow: 0 0 50px rgba(0,0,0,0.5);
+	position: relative;
+}
+
+.close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 20px;
+  right: 20px;
+  opacity: 0.8;
+  transition: all 200ms;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #666;
+}
+
+.close:hover {
+  opacity: 1;
+}
+
+.content-vraag-sectie {
+ background: rgba(255, 255, 255, 1);
+ width: 70%;
+ padding: 4vw;
+ margin: 0 auto 30px auto;
+}
+
+.antwoorden {
+background: rgba(255, 255, 255, 0.9);
+}
+
+.antwoord {
+width: 100%;
+padding: 4vw;
+}
+
+.toetsMaken {
+ background: rgba(255, 255, 255, 1);
+ width: 70%;
+ padding: 1vw;
+ margin: 0 auto 0px auto;
+}
+
+.nieuweVraag {
+ background: lightgrey;
+ padding: 5px;
+}
+
+.nieuwVraagGebied {
+ background: lightgrey;
+ padding: 5px;
+ width: 70%;
+ margin: 0 auto 30px auto;
+}
+
+.content {
+width: 80vw;
+height: 100vh;
+position: absolute;
+left: 20vw;
+padding: 40px 0px 100px 5vw;
+}
+
+div.content-vraag-info {
+display: flex;
+justify-content: flex-start;
+}
+
+div.content-rating {
+margin-top: 25px;
+}
+
+div.previous-next {
+font-size: 13pt;
+text-align: center;
+margin-top: 25px;
+}
+
+div.content-tools {
+padding: 10px;
+margin: -40px auto 50px auto;
+}
+
+button.button-tool {
+width: 30%;
+font-weight: 700 !important;
+text-align: center;
+color: var(--vierdeKleur)
+background-color: var(--eersteKleur);
+border: 0;
+padding: 8px 15px;
+margin-right: 15px;
+}
+
+button.button-tool:hover {
+color: var(--eersteKleur);
+background-color: var(--vijfdeKleur);
+}
+
+div.tool-wrapper {
+margin-bottom: 50px;
+}
+
+.ql-toolbar.ql-snow {
+width: 70%;
+background: white !important;
+margin: 0 auto;
+}
+
+#editor {
+width: 70%;
+height: 150px;
+background-color: var(--eersteKleur);
+box-shadow: 1px 1px 5px var(--vierdeKleur);
+margin: 0 auto;
+}
+
+.content-tools {
+text-align: center;
+}
+
+.onzichtbaar {
+display: none;
+}
+
+/*Grafische elementen*/
+
+.streep {
+ /*Scheidingslijn te gebruiken in vragenlijst.html*/
+ width: 100%;
+ border-bottom: 2px solid var(--vierdeKleur);
+ margin-bottom: 20px;
+ opacity: 0.3;
+}
+
+.streep-2 {
+width: 90%;
+height: 1.5px;
+background: var(--vierdeKleur);
+opacity: 0.2;
+margin: 60px auto 0 auto;
+}
+
+/*Paragrafen en links*/
+
+p.content-vraag-tekst {
+width: 90%;
+line-height: 20px;
+margin-bottom: 25px;
+}
+
+a.leesMeer {
+margin-top: 20px;
+text-decoration: underline;
+}
+
+a.previous-next-active {
+color: var(--vierdeKleur);
+}
+
+/* Login-pagina */
+
+body.page-login {
+background-color: var(--vierdeKleur);
+}
+
+div.login-box {
+width: 25%;
+height: 350px;
+background-color: rgb(249, 249, 249);
+border-radius: 5px;
+border: 1px solid rgb(231, 231, 231);
+margin: 150px auto 0 auto;
+padding: 20px;
+}
+
+div.form-group {
+width: 85%;
+margin: 0 auto;
+}
+
+img.login-profile {
+width: 25%;
+max-width: 30%;
+border-radius: 150px;
+box-shadow: 2px 2px 15px var(--vierdeKleur);
+margin: 0 auto;
+position: relative;
+bottom: 65px;
+left: 50%;
+transform: translate(-50%);
+}
+
+input.login-input {
+margin-bottom: 30px;
+}
+
+button.login-signin, button.login-signin:hover {
+  color: var(--eersteKleur);
+  font-size: 16px;
+  background-color: var(--vijfdeKleur);
+  border: none;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 10px 15px;
+  margin-bottom: 20px;
+}
+
+input.submit-button {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+/*Media queries*/
+@media (max-width: 1000px) {
+ #wrapper.menuDisplayed #sidebar-wrapper {
+     width: 25vw;
+}
+
+ #wrapper.menuDisplayed #page-content-wrapper {
+     padding-left: 30vw;
+ }
+}
+
+@media (max-width: 1400px) {}
+
+@media (max-width: 1100px) {
+  div.login-box {
+      width: 34%;
+  }
+}
+
+@media (max-width: 885px) {
+  h1.dashboard-hoofdtitel{
+      font-size: 30pt !important;
+  }
+  h2.dashboard-subtitel {
+      font-size: 25pt !important;
+  }
+  div.content-vraag-sectie {
+      /*Kaders in vragenlijst.html*/
+      width: 95%;
+  }
+  div.login-box {
+      width: 40%;
+  }
+}
+
+@media (max-width: 850px) {
+  div.login-box {
+      width: 50%;
+  }
+}
+
+@media (max-width: 555px) {
+  h1.dashboard-hoofdtitel{
+      font-size: 25pt !important;
+  }
+  h2.dashboard-subtitel {
+      font-size: 20pt !important;
+  }
+  div.login-box {
+      width: 90%;
+  }
+  div.content-vraag-sectie {
+      /*Kaders in vragenlijst.html*/
+      width: 100%;
+  }
+}
