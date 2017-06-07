@@ -199,6 +199,34 @@ function main() {
 
     }
 
+    if (window.location.href.match('vragenlijstLector.html') !== null) {
+        //upvote systeem
+        var rating = document.getElementsByClassName("rating");
+
+        for (i = 0; i < rating.length; i++) {
+            rating[i].addEventListener("click", function() {
+                console.log("Het aantal likes: " + this.getAttribute("data-likes"));
+                var dataAttribuut = this.getAttribute("data-likes");
+                var aantalLikes = Number(dataAttribuut);
+                if (this.className === "rating voted") {
+                    var dislike = aantalLikes - 1;
+                    this.setAttribute("data-likes", dislike);
+                    console.log("Je trekt je stem terug in, het aantal nieuwe likes: " + this.getAttribute("data-likes"));
+                    this.className = "rating";
+                    this.innerHTML = "<img src=\"./images/apollo_icon_1.png\" width=\"25\">" + " +" + dislike;
+                } else {
+                    var nieuwAantalLikes = aantalLikes + 1;
+                    this.setAttribute("data-likes", nieuwAantalLikes);
+                    console.log("Het aantal nieuwe likes: " + this.getAttribute("data-likes"));
+                    this.className = "rating voted";
+                    this.innerHTML = "<img src=\"./images/apollo_icon_2.png\" width=\"25\">" + " +" + nieuwAantalLikes;
+                }
+            });
+        }
+        /*>>>>>>> master*/
+
+    }
+
 
 
 
