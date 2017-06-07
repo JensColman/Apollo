@@ -87,14 +87,33 @@
 						<a class="insideLes" href="toets.html">Toets</a>
 						<a class="insideLes" href="#">...</a>
 					</div>
-					<a href="toetsMaken.html">
-						<div class="les toevoegen toevoegenLes">
+					<a href="#popup1">
+						<div id="toevoegenVak" class="les toevoegen toevoegenLes">
 							<div class="rechtLijn"></div>
 							<div class="neerLijn"></div>
 						</div>
 					</a>
-				</div>
-			</div>
+					<div id="popup1" class="overlay">
+						<div class="popup">
+							<h2>Nieuw vak toevoegen</h2>
+							<a class="close" href="#">&times;</a>
+					      <form onsubmit="return false">
+					          <p>Kies een vak om toe te voegen</p>
+						         <select id="vakKiezen" name="vak-kiezen">
+						          <option value="AC4">Anderstalige Communicatie 4</option>
+						          <option value="BB4">Bedrijfsbeleid 4</option>
+						          <option value="CMT4">Crossmediatechnologie 4</option>
+						          <option value="CME4">Crossmedia experiment 4</option>
+						          <option value="GD4">Grafisch design 4</option>
+						          <option value="KP4">Kernproject 4</option>
+						          <option value="UID4">Usability &amp; interaction Design 4</option>
+						        </select>
+						        <button id="vaktoevoegen"value="Toevoegen" style="margin-top: 25px; padding: 5px;">Toevoegen</button>
+					      </form>
+						 </div>
+					</div>
+				</div><!--einde div.lessen-->
+			</div><!--einde div.container-fluid-->
 		</div>
 	</div>
 
